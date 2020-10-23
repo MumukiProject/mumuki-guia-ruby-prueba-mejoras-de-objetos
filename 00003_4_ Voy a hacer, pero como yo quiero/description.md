@@ -18,6 +18,6 @@ Ahora que vimos estas condiciones anidadas que poco tienen que ver con el nido d
 
 * Si está débil, come diez gramos de alpiste, para recuperarse.
 * Si no está debil pero sí feliz, vuela en círculos cinco veces.
-* Si no está feliz ni débil, come 5 gramos.
+* Si no está feliz ni débil, vuela en círculos 3 veces.
 
 > Modificá a `Pepita` para que el método `hacer_lo_que_quiera!` se comporte como mencionamos más arriba.

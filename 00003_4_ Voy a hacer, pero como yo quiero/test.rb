@@ -24,6 +24,6 @@ describe 'Pepita' do
   it 'cuando no está ni débil ni feliz y hace lo que quiere, come 5 gramos de alpiste' do
     Pepita.energia = 500
     Pepita.hacer_lo_que_quiera!
-    expect(Pepita.energia).to eq 575
+    expect(Pepita.energia).to eq 470
   end  
 end
