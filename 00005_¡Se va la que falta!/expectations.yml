@@ -1,0 +1,11 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Inodoro
+  inspection: DeclaresMethod:tomar_mate!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Eulogia
+  inspection: DeclaresMethod:recibir_mate!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Mendieta
+  inspection: DeclaresMethod:recibir_mate!

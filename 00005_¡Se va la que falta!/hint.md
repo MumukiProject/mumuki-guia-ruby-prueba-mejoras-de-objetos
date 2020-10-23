@@ -1,0 +1,1 @@
+Cuando `Inodoro` toma mate, su `compinche` recibe un mate. Esto no funciona al revés, cuando sus compinches reciben un mate no lo hacen tomar a `Inodoro`. 
