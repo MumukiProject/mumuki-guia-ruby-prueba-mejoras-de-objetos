@@ -10,11 +10,11 @@ expectations:
   binding: feliz?
   inspection: Not:Assigns
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  binding: hacer_lo_que_quiera
+  binding: hacer_lo_que_quiera!
   inspection: Uses:times
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  binding: hacer_lo_que_quiera
+  binding: hacer_lo_que_quiera!
   inspection: Uses:debil?
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  binding: hacer_lo_que_quiera
+  binding: hacer_lo_que_quiera!
   inspection: Uses:feliz?
