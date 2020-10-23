@@ -18,3 +18,6 @@ expectations:
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   binding: Eulogia
   inspection: Not:DeclaresMethod:enojada
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Inodoro
+  inspection: DeclaresMethod:compinche
