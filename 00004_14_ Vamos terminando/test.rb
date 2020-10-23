@@ -34,7 +34,7 @@ context '' do
   
   describe 'Eulogia' do
     it 'puede decirnos si está enojada' do
-      expect(Eulogia.enojada).to be false
+      expect(Eulogia.enojada?).to be false
     end
   end
   
