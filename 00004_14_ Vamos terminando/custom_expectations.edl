@@ -1,0 +1,2 @@
+expectation "`cafeina_en_sangre` no debe devolver el número directamente":
+  within `cafeina_en_sangre` returns with nonliteral;
