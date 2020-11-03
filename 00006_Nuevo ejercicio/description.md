@@ -1,0 +1,1 @@
+Ejercicio para probar la consola de evaluación manual.
