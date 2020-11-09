@@ -5,4 +5,4 @@ rules:
     these_expectations_failed:
     - CarlosDuty Not:Uses:@dificultad
   then: "`CarlosDuty` calcula su dificultad en el método `dificultad`.  No la guarda
-    en un atributo"
+    en un atributo `@dificultad`"
