@@ -1,2 +1,0 @@
-expectation "`CarlosDuty` no debe calcular la `@dificultad` al momento de jugar":
-  within `CarlosDuty.jugar!` not(uses `@dificultad`) 
