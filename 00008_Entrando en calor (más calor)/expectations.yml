@@ -1,5 +1,5 @@
 ---
 expectations:
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  binding: CarlosDuty
+  binding: "*"
   inspection: Not:DeclaresAttribute:@dificultad
