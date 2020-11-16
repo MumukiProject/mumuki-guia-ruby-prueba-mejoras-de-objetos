@@ -4,4 +4,4 @@ function obtenerUrlDePolimorfismo() {
 }
 </script>
 
-Visitanos en <a href="obtenerUrlDePolimorfismo()" target="_blank">Mumuki</a>
+Visitanos en <a href=obtenerUrlDePolimorfismo() target="_blank">Mumuki</a>
