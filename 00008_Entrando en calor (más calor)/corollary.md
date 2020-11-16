@@ -5,5 +5,5 @@ function cambiarPagina() {
 </script>
 
 
-Visitanos en <a href="#" id="mylink" onclick="cambiarPagina(); return false">Mumuki </a>
+Visitanos en <a id="mylink" onclick="cambiarPagina(); return false">Mumuki </a>
 
