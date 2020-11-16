@@ -5,5 +5,5 @@ function obtenerUrl() {
 </script>
 
 
-Visitanos en <a href="obtenerUrl()" target="_blank">Mumuki </a>
+Visitanos en <a href="3331" target="_blank">Mumuki </a>
 
