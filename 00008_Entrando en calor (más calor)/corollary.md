@@ -1,9 +1,9 @@
 <script>
 function cambiarPagina() {
-  console.log("https://google.com");
+  return "https://google.com";
 }
 </script>
 
 
-Visitanos en <a id="mylink" onclick="cambiarPagina(); return false">Mumuki </a>
+Visitanos en <a href="javascript:cambiarPagina()" target="_blank">Mumuki </a>
 
