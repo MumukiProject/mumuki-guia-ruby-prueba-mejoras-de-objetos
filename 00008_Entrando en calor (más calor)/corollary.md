@@ -1,6 +1,6 @@
 <script>
 function obtenerUrlDePolimorfismo() {
-  return window.location.href;
+  return "https://google.com";
 }
 </script>
 
