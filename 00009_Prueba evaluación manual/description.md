@@ -13,7 +13,7 @@ Como no queremos que se termine esta maravillosa lección :face_with_raised_eyeb
     display: none;
   }
   .submission-results h4::after {
-    content: "Tu solución quedó registrada. ¡Podés continuar con los siguientes ejercicios!";
+    content: "Tu solución quedó registrada. ¡Cuando quieras podés continuar con los siguientes ejercicios!";
     font-weight: lighter;
   }
   .submission-results h4 strong {
