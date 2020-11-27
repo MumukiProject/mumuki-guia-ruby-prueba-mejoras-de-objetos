@@ -16,7 +16,10 @@ Como no queremos que se termine esta maravillosa lección :face_with_raised_eyeb
     content: "¡Gracias por enviar tu solución!";
     font-weight: bold;
   }
-  .submission-results h4 strong { 
+  .submission-results h4 strong {
+    display: none;
+  }
+  .submission-results h4 strong::after { 
     content: "Tu solución quedó registrada, ¡podés continuar con los siguientes ejercicios!";
   }
 </style>
