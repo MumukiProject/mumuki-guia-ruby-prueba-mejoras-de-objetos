@@ -13,15 +13,17 @@ Como no queremos que se termine esta maravillosa lección :face_with_raised_eyeb
     display: none;
   }
   .submission-results h4::after {
-    content: "¡Gracias por enviar tu solución!";
+    content: "Tu solución quedó registrada, ¡podés continuar con los siguientes ejercicios!";
     font-weight: bold;
   }
   .submission-results h4 strong {
     visibility: hidden;
     position: relative;
+    display: block;
+    margin-bottom: 15px;
   }
   .submission-results h4 strong::after { 
-    content: "Tu solución quedó registrada, ¡podés continuar con los siguientes ejercicios!";
+    content: "¡Gracias por enviar tu solución!";
     visibility: visible;
     position: absolute;
     top: 0;
