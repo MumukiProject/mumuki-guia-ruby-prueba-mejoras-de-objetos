@@ -14,7 +14,7 @@ Como no queremos que se termine esta maravillosa lección :face_with_raised_eyeb
   }
   .submission-results h4::after {
     content: "Tu solución quedó registrada, ¡podés continuar con los siguientes ejercicios!";
-    font-weight: bold;
+    font-weight: lighter;
   }
   .submission-results h4 strong {
     visibility: hidden;
