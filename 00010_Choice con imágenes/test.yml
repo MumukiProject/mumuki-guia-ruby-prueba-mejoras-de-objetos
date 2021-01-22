@@ -1,0 +1,4 @@
+- name: Se eligió la imagen correcta
+  keys:
+    malware_image: 
+      equal: "2"

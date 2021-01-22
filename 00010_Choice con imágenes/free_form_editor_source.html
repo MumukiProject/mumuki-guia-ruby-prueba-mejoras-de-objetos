@@ -1,0 +1,90 @@
+<div class="malware-container">
+  <div class="row-flex">
+      <div class="imgblock">
+        <img src="https://raw.githubusercontent.com/MumukiProject/mumuki-guia-text-seguridad-y-libertad-en-la-nube/master/assets/virus%20definitivo_1549567562206.png" onclick="selectImage(1)"/>
+      </div>
+      <div class="imgblock">
+        <img src="https://raw.githubusercontent.com/MumukiProject/mumuki-guia-java-prueba/master/assets/Screenshot%20from%202019-02-06%2017-10-28_1549483858958.png" onclick="selectImage(2)"/>
+      </div>
+      <div class="imgblock">
+        <img src="https://raw.githubusercontent.com/MumukiProject/mumuki-guia-text-seguridad-y-libertad-en-la-nube/master/assets/banda_1549567212526.png" onclick="selectImage(3)"/>
+      </div>
+  </div>
+  <div class="row-flex">
+      <div class="imgblock field radio complementary complementary-radio">
+        <input class="form-control mu-free-form-input" type="radio" name="malware_image" id="radio_1" value="1" onclick="selectImage(1)"/>
+        <label for="radio_1"></label>
+      </div>
+      <div class="imgblock field radio complementary complementary-radio">
+        <input class="form-control mu-free-form-input" type="radio" name="malware_image" id="radio_2" value="2" onclick="selectImage(2)"/>
+        <label for="radio_2"></label>
+      </div>
+      <div class="imgblock field radio complementary complementary-radio">
+        <input class="form-control mu-free-form-input" type="radio" name="malware_image" id="radio_3" value="3" onclick="selectImage(3)"/>
+        <label for="radio_3"></label>
+      </div>
+  </div>
+</div>
+
+<script>
+  function setSolutionValue(imageIndex) {
+    let value = {'malware_image': imageIndex.toString()}
+    $('#solution_content').attr('value', JSON.stringify(value));
+  }
+  
+  function selectImage(imageIndex) {
+    $(`#radio_${imageIndex}`).prop("checked", true);
+    setSolutionValue(imageIndex);
+    $('.mu-free-form-input').change(() => setSolutionValue(imageIndex));
+  }
+  
+  function loadPreviousSolution() {
+    let previousValue = $('#solution_content').val();
+    if(previousValue) {
+      let currentIndex = JSON.parse(previousValue).malware_image;
+      selectImage(Number.parseInt(currentIndex))
+    }
+  }
+  
+  loadPreviousSolution();
+</script>
+
+<style>
+  .row-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .malware-container {
+    display: block;
+    width: 100%;
+  }
+  .imgblock {
+    flex: 1;
+    float: left;
+    margin: 8px;
+    box-sizing: border-box;
+    vertical-align: middle;
+  }
+  .imgblock img {
+      margin: 5px;
+      width: 100%; 
+      height: auto;
+      vertical-align: middle;
+      cursor: pointer;
+  }
+  input[type="radio"]{
+    margin: 4px 0 0;
+    line-height: normal;
+    border: 0px;
+    width: 100%;
+    height: 1em;
+    background-color: #FF5B81;
+    color: white;
+  }
+  label[for*='radio'] {
+    position: absolute;
+    left: 50%;
+    top: -15px;
+  }
+</style>
