@@ -1,4 +1,4 @@
-- name: Se eligió la imagen correcta
+- name: Se eligió la imagen con 3 referencias a objetos equivalentes, pero no identicos.
   keys:
     malware_image: 
-      equal: "2"
+      equal: "3"
