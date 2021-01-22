@@ -11,28 +11,11 @@ Pensemos un caso concreto. ¿Hay forma de saber si dos strings representan la **
 => false
 ```
 
+<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-guia-ruby-prueba-mejoras-de-objetos/master/assets/Screen%20Shot%202021-01-22%20at%2016_1611345534410.57.03.png" alt="Screen Shot 2021-01-22 at 16_1611345534410.57.03.png" width="auto" height="auto">
 
-``` ruby
-procer = "San Martín"
-avenida = "San Martín"
-ciudad = "San Martín"
-```
+<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-guia-ruby-prueba-mejoras-de-objetos/master/assets/Screen%20Shot%202021-01-22%20at%2016_1611345545277.57.24.png" alt="Screen Shot 2021-01-22 at 16_1611345545277.57.24.png" width="auto" height="auto">
 
-
-```ruby
-autora_de_desolacion = "Gabriela Mistral"
-autora_de_ternura = "Gabriela Mistral"
-autora_de_tala = autora_de_desolacion
-```
-
-
-```ruby
-autor_de_rayuela = "Julio Cortázar"
-autor_de_deshoras = autor_de_rayuela
-autor_de_bestiario = autor_de_deshoras
-
-```
-
+<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-guia-ruby-prueba-mejoras-de-objetos/master/assets/Screen%20Shot%202021-01-22%20at%2016_1611345557635.57.38.png" alt="Screen Shot 2021-01-22 at 16_1611345557635.57.38.png" width="auto" height="auto">
 
 
 El mensaje `==` nos permite comparar dos objetos por _equivalencia_; lo cual se da típicamente cuando los objetos tienen el mismo estado. Y como vemos, puede devolver `true`, aún cuando los dos objetos no sean _el mismo_. 
