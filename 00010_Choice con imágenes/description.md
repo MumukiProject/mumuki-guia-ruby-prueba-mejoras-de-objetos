@@ -16,11 +16,17 @@ Pensemos un caso concreto. ¿Hay forma de saber si dos strings representan la **
 procer = "San Martín"
 avenida = "San Martín"
 ciudad = "San Martín"
+```
 
+
+```ruby
 autora_de_desolacion = "Gabriela Mistral"
 autora_de_ternura = "Gabriela Mistral"
 autora_de_tala = autora_de_desolacion
+```
 
+
+```ruby
 autor_de_rayuela = "Julio Cortázar"
 autor_de_deshoras = autor_de_rayuela
 autor_de_bestiario = autor_de_deshoras
