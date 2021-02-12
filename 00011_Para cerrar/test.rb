@@ -7,27 +7,27 @@ it "Inicialmente Jor no tiene un plato del dia" do
 end
 
 it "El Guiso inicialmente no está picante" do
-  expect(Guiso.esta_picante?).to be false
+  expect(Guiso.picante?).to be false
 end
 
 it "Cuando Jor picantea su plato pasa a estar picante" do
   Jor.plato_del_dia = Guiso
   Jor.picantear!
-  expect(Guiso.esta_picante?).to be true
+  expect(Guiso.picante?).to be true
 end
 
 it "El Guiso está picante cuando Luchi lo suaviza quitándole 2 ajíes después que Jor lo picanteo" do
   Jor.plato_del_dia = Guiso
   Jor.picantear!
   Luchi.suavizar! Guiso, 2
-  expect(Guiso.esta_picante?).to be false
+  expect(Guiso.picante?).to be false
 end
 
 it "El Guiso deja de estar picante cuando Luchi lo suaviza quitándole 3 ajíes después que Jor lo picanteo" do
   Jor.plato_del_dia = Guiso
   Jor.picantear!
   Luchi.suavizar! Guiso, 3
-  expect(Guiso.esta_picante?).to be false
+  expect(Guiso.picante?).to be false
 end
 
 it "El Guiso está picante cuando Luchi lo suaviza quitándole 2 ajíes después que Jor lo picanteo 2 veces" do
@@ -35,7 +35,7 @@ it "El Guiso está picante cuando Luchi lo suaviza quitándole 2 ajíes después
   Jor.picantear!
   Jor.picantear!
   Luchi.suavizar! Guiso, 2
-  expect(Guiso.esta_picante?).to be true
+  expect(Guiso.picante?).to be true
 end
 
 it "El Guiso no está picante cuando Luchi lo suaviza quitándole 4 ajíes después que Jor lo picanteo 3 veces porque se tira la salsa" do
@@ -44,5 +44,5 @@ it "El Guiso no está picante cuando Luchi lo suaviza quitándole 4 ajíes despu
   Jor.picantear!
   Jor.picantear!
   Luchi.suavizar! Guiso, 4
-  expect(Guiso.esta_picante?).to be false
+  expect(Guiso.picante?).to be false
 end
