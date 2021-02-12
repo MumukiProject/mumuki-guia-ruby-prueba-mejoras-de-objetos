@@ -20,7 +20,7 @@ it "El Guiso está picante cuando Luchi lo suaviza quitándole 2 ajíes después
   Jor.plato_del_dia = Guiso
   Jor.picantear!
   Luchi.suavizar! Guiso, 2
-  expect(Guiso.picante?).to be false
+  expect(Guiso.picante?).to be true
 end
 
 it "El Guiso deja de estar picante cuando Luchi lo suaviza quitándole 3 ajíes después que Jor lo picanteo" do
