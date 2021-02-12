@@ -1,0 +1,8 @@
+---
+rules:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    these_tests_failed:
+    - El Guiso deja de estar picante cuando Luchi lo suaviza quitándole 3 ajíes después
+      que Jor lo picanteo
+  then: recordá que el Guiso está picante si tiene más de dos ajíes
