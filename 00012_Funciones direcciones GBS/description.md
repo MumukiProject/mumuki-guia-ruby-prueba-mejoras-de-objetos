@@ -26,9 +26,7 @@ Porque `siguiente(Norte)` es `Este`. Y si luego ejecutamos `Mover(previo(Oeste))
 
 Porque `previo(Oeste)` es `Sur`.
 
-¡Veamos si se entendió!
-
-Si tenemos este tablero inicial:
+¡Veamos si se entendió! Si tenemos este tablero inicial:
 
 <gs-board>
   GBB/1.0
@@ -47,5 +45,3 @@ procedure PonerMisterioso() {
   Mover(previo(Oeste))
   Poner(Rojo)
 }
-
-
