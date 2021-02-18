@@ -2,10 +2,10 @@
 locale: es
 tags: []
 layout: input_bottom
-editor: code
+editor: free_form
 type: problem
 extra_visible: false
-language: gobstones
+language: text
 teacher_info: ''
 manual_evaluation: true
 choices: []
