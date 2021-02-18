@@ -2,37 +2,21 @@ Ya te presentamos las funciones `opuesto`, `previo` y `siguiente` que nos permit
 
 Si tuviesemos este tablero inicial:
 
-<gs-board>
-  GBB/1.0
-    size 2 2
-    head 0 1
-</gs-board>
+<img src="https://raw.githubusercontent.com/sagrado-corazon-alcal/mumuki-guia-fundamentos-primeros-programas-2020/master/assets/Ejemplo1_1613666233954.png" alt="Ejemplo1_1613666233954.png" width="auto" height="auto">
 
 Y ejecutásemos `Mover(siguiente(Norte))` obtendríamos:
 
-<gs-board>
-  GBB/1.0
-    size 2 2
-    head 1 1
-</gs-board>
+<img src="https://raw.githubusercontent.com/sagrado-corazon-alcal/mumuki-guia-fundamentos-primeros-programas-2020/master/assets/Ejemplo2_1613666255883.png" alt="Ejemplo2_1613666255883.png" width="auto" height="auto">
 
 Porque `siguiente(Norte)` es `Este`. Y si luego ejecutamos `Mover(previo(Oeste))` obtendríamos:
 
-<gs-board>
-  GBB/1.0
-    size 2 2
-    head 1 0
-</gs-board>
+<img src="https://raw.githubusercontent.com/sagrado-corazon-alcal/mumuki-guia-fundamentos-primeros-programas-2020/master/assets/Ejemplo3_1613666275495.png" alt="Ejemplo3_1613666275495.png" width="auto" height="auto">
 
 Porque `previo(Oeste)` es `Sur`.
 
-¡Veamos si se entendió! Si tenemos este tablero inicial:
+¡Veamos si se entendió! :smiley: Si tenemos este tablero inicial:
 
-<gs-board>
-  GBB/1.0
-    size 3 3
-    head 0 2
-</gs-board>
+<img src="https://raw.githubusercontent.com/sagrado-corazon-alcal/mumuki-guia-fundamentos-primeros-programas-2020/master/assets/TableroInicial_1613666173929.png" alt="TableroInicial_1613666173929.png" width="auto" height="auto">
 
 > ¿Qué tablero se consigue luego de invocar el siguiente procedimiento?
 >

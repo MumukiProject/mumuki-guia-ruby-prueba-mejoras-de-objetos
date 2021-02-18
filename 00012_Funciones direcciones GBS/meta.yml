@@ -7,6 +7,6 @@ type: problem
 extra_visible: false
 language: text
 teacher_info: ''
-manual_evaluation: true
+manual_evaluation: false
 choices: []
 name: Funciones direcciones GBS
