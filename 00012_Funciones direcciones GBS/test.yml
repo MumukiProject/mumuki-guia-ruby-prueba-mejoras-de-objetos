@@ -1,4 +1,0 @@
-- name: Se eligió la imagen correcta
-  keys:
-    board_image: 
-      equal: "4"

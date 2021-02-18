@@ -2,11 +2,11 @@
 locale: es
 tags: []
 layout: input_bottom
-editor: free_form
+editor: code
 type: problem
 extra_visible: false
-language: text
+language: gobstones
 teacher_info: ''
-manual_evaluation: false
+manual_evaluation: true
 choices: []
 name: Funciones direcciones GBS
