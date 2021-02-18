@@ -23,9 +23,9 @@ Si tenemos este tablero inicial:
 >```gobstones
 procedure PonerMisterioso() {
   Mover(siguiente(Este))
-  Poner(Rojo)
+  Poner(Negro)
   Mover(opuesto(Oeste))
-  Poner(Rojo)
+  Poner(Negro)
   Mover(previo(Oeste))
-  Poner(Rojo)
+  Poner(Negro)
 }
