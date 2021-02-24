@@ -10,4 +10,6 @@ rules:
   when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     only_these_tests_failed:
     - Luchi no descarta la salsa cuando tiene 10 ajíes
+    - Si Jor picantea su plato dos veces y Luchi luego suaviza en 1 ají, los Fideos
+      quedan picantes
   then: "`Luchi` solo descarta la salsa si tiene más de 10 ajíes"
