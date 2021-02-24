@@ -5,7 +5,7 @@ rules:
     these_tests_failed:
     - Si Jor picantea su plato y Luchi luego suaviza en 3 ajíes, los Fideos no quedan
       picantes
-  then: recordá que los `Fideos` están picante si tiene más de dos ajíes
+  then: recordá que los `Fideos` están picantes si tiene más de dos ajíes
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     these_tests_failed:
