@@ -52,8 +52,6 @@ it "Luchi descarta la salsa cuando tiene más de 10 ajíes" do
 end
   
 it "Luchi no descarta la salsa cuando tiene 10 ajíes" do
-  Fideos.descartar_la_salsa!
-  Jor.plato_del_dia = Fideos
   Jor.picantear!
   Jor.picantear!
   allow(Fideos).to receive(:descartar_la_salsa!)
