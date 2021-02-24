@@ -51,17 +51,16 @@ it "Luchi descarta la salsa cuando tiene más de 10 ajíes" do
   expect(Fideos).to have_received(:descartar_la_salsa!), "Luchi debería descartar la salsa porque Fideos debería tener 15 ajíes"
 end
 
-begin
+
+  
+it "Luchi no descarta la salsa cuando tiene 10 ajíes" do
   Fideos.descartar_la_salsa!
   Jor.plato_del_dia = Fideos
   Jor.picantear!
   Jor.picantear!
-  it "Luchi no descarta la salsa cuando tiene 10 ajíes" do
-    allow(Fideos).to receive(:descartar_la_salsa!)
-    Luchi.suavizar! Fideos, 4
-    expect(Fideos).not_to have_received(:descartar_la_salsa!), "Luchi no debería descartar la salsa porque Fideos debería tener 10 ajíes"
-  end
-rescue => e
+  allow(Fideos).to receive(:descartar_la_salsa!)
+  Luchi.suavizar! Fideos, 4
+  expect(Fideos).not_to have_received(:descartar_la_salsa!), "Luchi no debería descartar la salsa porque Fideos debería tener 10 ajíes"
 end
 
 it "Luchi no descarta la salsa cuando tiene menos de 10 ajíes" do
