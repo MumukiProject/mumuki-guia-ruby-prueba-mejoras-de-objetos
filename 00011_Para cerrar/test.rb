@@ -54,9 +54,9 @@ begin
   Fideos.descartar_la_salsa!
   Jor.picantear!
   Jor.picantear!
+  allow(Fideos).to receive(:descartar_la_salsa!)
+  Luchi.suavizar! Fideos, 4
   it "Luchi no descarta la salsa cuando tiene 10 ajíes" do
-    allow(Fideos).to receive(:descartar_la_salsa!)
-    Luchi.suavizar! Fideos, 4
     expect(Fideos).not_to have_received(:descartar_la_salsa!), "Luchi no debería descartar la salsa porque Fideos debería tener 10 ajíes"
   end
 rescue
