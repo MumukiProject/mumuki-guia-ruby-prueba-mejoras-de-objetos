@@ -9,6 +9,7 @@ it "Los Fideos inicialmente no están picantes" do
 end
 
 it "Si Jor picantea su plato, los Fideos quedan picantes" do
+  Jor.picantear!
   resultado = Fideos.picantes?
   expect(resultado).to be(true), "Fideos.picantes? debería ser true porque deberían tener 5 ajíes. Sin embargo, Fideos.picantes? fue #{resultado}."
 end
