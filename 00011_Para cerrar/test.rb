@@ -44,10 +44,11 @@ end
 it "Luchi descarta la salsa cuando tiene más de 10 ajíes" do
   Jor.picantear!
   Jor.picantear!
+  Luchi.suavizar! Fideos, 4
   Jor.picantear!
   
   allow(Fideos).to receive(:descartar_la_salsa!)
-  Luchi.suavizar! Fideos, 4
+  Luchi.suavizar! Fideos, 1
   expect(Fideos).to have_received(:descartar_la_salsa!), "Luchi debería descartar la salsa porque Fideos debería tener 15 ajíes"
 end
   
