@@ -48,22 +48,27 @@ it "Luchi descarta la salsa cuando tiene más de 10 ajíes" do
   Jor.picantear!
   Jor.picantear!
   Jor.picantear!
+  
+  allow(Fideos).to receive(:descartar_la_salsa!)
   Luchi.suavizar! Fideos, 4
-
-  expect(Fideos).to receive(:descartar_la_salsa!)
+  expect(Fideos).to have_received(:descartar_la_salsa!)
 end
 
 it "Luchi no descarta la salsa cuando tiene 10 ajíes" do
   Jor.plato_del_dia = Fideos
   Jor.picantear!
   Jor.picantear!
+  
+  allow(Fideos).to receive(:descartar_la_salsa!)
   Luchi.suavizar! Fideos, 4
-  expect(Fideos).to_not receive(:descartar_la_salsa!)
+  expect(Fideos).to_not have_received(:descartar_la_salsa!)
 end
 
 it "Luchi no descarta la salsa cuando tiene menos de 10 ajíes" do
   Jor.plato_del_dia = Fideos
   Jor.picantear!
+  
+  allow(Fideos).to receive(:descartar_la_salsa!)
   Luchi.suavizar! Fideos, 2
-  expect(Fideos).to_not receive(:descartar_la_salsa!)
+  expect(Fideos).to_not have_received(:descartar_la_salsa!)
 end
