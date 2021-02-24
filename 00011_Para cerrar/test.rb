@@ -54,7 +54,6 @@ end
 begin
   Fideos.descartar_la_salsa!
   Jor.plato_del_dia = Fideos
-  Fideos.descartar_la_salsa!
   Jor.picantear!
   Jor.picantear!
   it "Luchi no descarta la salsa cuando tiene 10 ajíes" do
