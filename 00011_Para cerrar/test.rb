@@ -1,8 +1,8 @@
 before do
   Fideos.descartar_la_salsa!
+  Jor.plato_del_dia = Fideos
 end
 
-Jor.plato_del_dia = Fideos
 it "Los Fideos inicialmente no están picantes" do
   resultado = Fideos.picantes?
   expect(resultado).to be(false), "Fideos.picantes? debería ser false porque inicialmente no tienen ajíes. Sin embargo, Fideo.picantes? fue #{resultado}"
