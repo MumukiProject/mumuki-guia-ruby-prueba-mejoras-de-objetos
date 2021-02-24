@@ -8,6 +8,6 @@ rules:
   then: recordá que los `Fideos` están picantes si tiene más de dos ajíes
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    these_tests_failed:
+    only_these_tests_failed:
     - Luchi no descarta la salsa cuando tiene 10 ajíes
   then: "`Luchi` solo descarta la salsa si tiene más de 10 ajíes"
