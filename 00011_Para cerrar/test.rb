@@ -1,8 +1,8 @@
 before do
-  Jor.plato_del_dia = Fideos
   Fideos.descartar_la_salsa!
 end
 
+Jor.plato_del_dia = Fideos
 it "Los Fideos inicialmente no están picantes" do
   resultado = Fideos.picantes?
   expect(resultado).to be(false), "Fideos.picantes? debería ser false porque inicialmente no tienen ajíes. Sin embargo, Fideo.picantes? fue #{resultado}"
@@ -23,7 +23,6 @@ end
 
 begin
   Fideos.descartar_la_salsa!
-  Jor.plato_del_dia = Fideos
   Jor.picantear!
   Luchi.suavizar! Fideos, 3
   resultado = Fideos.picantes?
@@ -51,14 +50,18 @@ it "Luchi descarta la salsa cuando tiene más de 10 ajíes" do
   expect(Fideos).to have_received(:descartar_la_salsa!), "Luchi debería descartar la salsa porque Fideos debería tener 15 ajíes"
 end
 
-it "Luchi no descarta la salsa cuando tiene 10 ajíes" do
+begin
+  Fideos.descartar_la_salsa!
   Jor.picantear!
   Jor.picantear!
-  
-  allow(Fideos).to receive(:descartar_la_salsa!)
-  Luchi.suavizar! Fideos, 4
-  expect(Fideos).not_to have_received(:descartar_la_salsa!), "Luchi no debería descartar la salsa porque Fideos debería tener 10 ajíes"
+  it "Luchi no descarta la salsa cuando tiene 10 ajíes" do
+    allow(Fideos).to receive(:descartar_la_salsa!)
+    Luchi.suavizar! Fideos, 4
+    expect(Fideos).not_to have_received(:descartar_la_salsa!), "Luchi no debería descartar la salsa porque Fideos debería tener 10 ajíes"
+  end
+rescue
 end
+
 
 it "Luchi no descarta la salsa cuando tiene menos de 10 ajíes" do
   Jor.picantear!
