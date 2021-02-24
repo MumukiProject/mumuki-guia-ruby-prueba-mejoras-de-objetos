@@ -43,8 +43,8 @@ end
 
 it "Luchi descarta la salsa cuando tiene más de 10 ajíes" do
   Jor.picantear!
-  Jor.picantear!
   Luchi.suavizar! Fideos, 4
+  Jor.picantear!
   Jor.picantear!
   
   allow(Fideos).to receive(:descartar_la_salsa!)
