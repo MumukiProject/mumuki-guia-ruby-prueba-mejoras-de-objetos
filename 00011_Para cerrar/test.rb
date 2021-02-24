@@ -49,7 +49,7 @@ it "Luchi descarta la salsa cuando tiene más de 10 ajíes" do
   
   allow(Fideos).to receive(:descartar_la_salsa!)
   Luchi.suavizar! Fideos, 1
-  expect(Fideos).to have_received(:descartar_la_salsa!), "Luchi debería descartar la salsa porque Fideos debería tener 15 ajíes"
+  expect(Fideos).to have_received(:descartar_la_salsa!), "Luchi debería descartar la salsa porque Fideos debería tener 11 ajíes"
 end
   
 it "Luchi no descarta la salsa cuando tiene 10 ajíes" do
