@@ -1,9 +1,6 @@
 before do
   Fideos.descartar_la_salsa!
-end
-
-it "Inicialmente Jor no tiene un plato del dia" do
-  expect { Jor.picantear! }.to raise_error
+  Jor.plato_del_dia = Fideos
 end
 
 it "Los Fideos inicialmente no están picantes" do
@@ -12,14 +9,11 @@ it "Los Fideos inicialmente no están picantes" do
 end
 
 it "Si Jor picantea su plato, los Fideos quedan picantes" do
-  Jor.plato_del_dia = Fideos
-  Jor.picantear!
   resultado = Fideos.picantes?
   expect(resultado).to be(true), "Fideos.picantes? debería ser true porque deberían tener 5 ajíes. Sin embargo, Fideos.picantes? fue #{resultado}."
 end
 
 it "Si Jor picantea su plato y Luchi luego suaviza en 2 ajíes, los Fideos quedan picantes" do
-  Jor.plato_del_dia = Fideos
   Jor.picantear!
   Luchi.suavizar! Fideos, 2
   resultado = Fideos.picantes?
@@ -27,18 +21,18 @@ it "Si Jor picantea su plato y Luchi luego suaviza en 2 ajíes, los Fideos queda
 end
 
 begin
+  Fideos.descartar_la_salsa!
+  Jor.plato_del_dia = Fideos
+  Jor.picantear!
+  Luchi.suavizar! Fideos, 3
+  resultado = Fideos.picantes?
   it "Si Jor picantea su plato y Luchi luego suaviza en 3 ajíes, los Fideos no quedan picantes" do
-    Jor.plato_del_dia = Fideos
-    Jor.picantear!
-    Luchi.suavizar! Fideos, 3
-    resultado = Fideos.picantes?
     expect(resultado).to be(false), "Fideos.picantes? debería ser false porque deberían tener 2 ajíes. Sin embargo, Fideos.picantes? fue #{resultado}."
   end
 rescue => e
 end
 
 it "Si Jor picantea su plato dos veces y Luchi luego suaviza en 1 ají, los Fideos quedan picantes" do
-  Jor.plato_del_dia = Fideos
   Jor.picantear!
   Jor.picantear!
   Luchi.suavizar! Fideos, 1
@@ -47,7 +41,6 @@ it "Si Jor picantea su plato dos veces y Luchi luego suaviza en 1 ají, los Fide
 end
 
 it "Luchi descarta la salsa cuando tiene más de 10 ajíes" do
-  Jor.plato_del_dia = Fideos
   Jor.picantear!
   Jor.picantear!
   Jor.picantear!
@@ -58,7 +51,6 @@ it "Luchi descarta la salsa cuando tiene más de 10 ajíes" do
 end
 
 it "Luchi no descarta la salsa cuando tiene 10 ajíes" do
-  Jor.plato_del_dia = Fideos
   Jor.picantear!
   Jor.picantear!
   
@@ -68,7 +60,6 @@ it "Luchi no descarta la salsa cuando tiene 10 ajíes" do
 end
 
 it "Luchi no descarta la salsa cuando tiene menos de 10 ajíes" do
-  Jor.plato_del_dia = Fideos
   Jor.picantear!
   
   allow(Fideos).to receive(:descartar_la_salsa!)
