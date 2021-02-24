@@ -49,8 +49,7 @@ it "Luchi descarta la salsa cuando tiene más de 10 ajíes" do
   Jor.picantear!
   Jor.picantear!
   Luchi.suavizar! Fideos, 4
-  resultado = Fideos.picantes?
-  expect(resultado).to be(false), "Fideos.picantes? debería ser false, pero fue #{resultado}"
+
   expect(Fideos).to receive(:descartar_la_salsa!)
 end
 
@@ -59,16 +58,12 @@ it "Luchi no descarta la salsa cuando tiene 10 ajíes" do
   Jor.picantear!
   Jor.picantear!
   Luchi.suavizar! Fideos, 4
-  resultado = Fideos.picantes?
   expect(Fideos).to_not receive(:descartar_la_salsa!)
-  expect(resultado).to be(true), "Fideos.picantes? debería ser true, pero fue #{resultado}"
 end
 
 it "Luchi no descarta la salsa cuando tiene menos de 10 ajíes" do
   Jor.plato_del_dia = Fideos
   Jor.picantear!
   Luchi.suavizar! Fideos, 2
-  resultado = Fideos.picantes?
   expect(Fideos).to_not receive(:descartar_la_salsa!)
-  expect(resultado).to be(true), "Fideos.picantes? debería ser true, pero fue #{resultado}"
 end
