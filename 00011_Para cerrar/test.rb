@@ -1,6 +1,6 @@
 before do
-  Fideos.descartar_la_salsa!
   Jor.plato_del_dia = Fideos
+  Fideos.descartar_la_salsa!
 end
 
 it "Los Fideos inicialmente no están picantes" do
