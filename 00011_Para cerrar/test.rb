@@ -34,7 +34,7 @@ it "Si Jor picantea su plato y Luchi luego suaviza en 3 ajíes, los Fideos no qu
   expect(resultado).to be(false), "Fideos.picantes? debería ser false porque deberían tener 2 ajíes. Sin embargo, Fideos.picantes? fue #{resultado}"
 end
 
-it "Si Jor picantea su plato dos veces y Luchi luego suaviza en 1 ají, los Fideos quedan picantes"
+it "Si Jor picantea su plato dos veces y Luchi luego suaviza en 1 ají, los Fideos quedan picantes" do
   Jor.plato_del_dia = Fideos
   Jor.picantear!
   Jor.picantear!
