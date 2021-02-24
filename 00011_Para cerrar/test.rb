@@ -61,7 +61,8 @@ end
 
 it "Luchi no descarta la salsa cuando tiene menos de 10 ajíes" do
   Jor.picantear!
+  Jor.picantear!
   allow(Fideos).to receive(:descartar_la_salsa!)
-  Luchi.suavizar! Fideos, 2
+  Luchi.suavizar! Fideos, 1
   expect(Fideos).not_to have_received(:descartar_la_salsa!), "Luchi no debería descartar la salsa porque Fideos debería tener 5 ajíes"
 end
