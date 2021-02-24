@@ -26,15 +26,15 @@ it "Si Jor picantea su plato y Luchi luego suaviza en 2 ajíes, los Fideos queda
   expect(resultado).to be(true), "Fideos.picantes? debería ser true porque deberían tener 3 ajíes. Sin embargo, Fideos.picantes? fue #{resultado}."
 end
 
-it "Si Jor picantea su plato y Luchi luego suaviza en 3 ajíes, los Fideos no quedan picantes" do
-  begin
+begin
+  it "Si Jor picantea su plato y Luchi luego suaviza en 3 ajíes, los Fideos no quedan picantes" do
     Jor.plato_del_dia = Fideos
     Jor.picantear!
     Luchi.suavizar! Fideos, 3
     resultado = Fideos.picantes?
     expect(resultado).to be(false), "Fideos.picantes? debería ser false porque deberían tener 2 ajíes. Sin embargo, Fideos.picantes? fue #{resultado}."
-  rescue
   end
+rescue
 end
 
 it "Si Jor picantea su plato dos veces y Luchi luego suaviza en 1 ají, los Fideos quedan picantes" do
