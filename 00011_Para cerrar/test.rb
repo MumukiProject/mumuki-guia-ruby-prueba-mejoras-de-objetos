@@ -3,46 +3,72 @@ before do
 end
 
 it "Inicialmente Jor no tiene un plato del dia" do
-  expect { Jor.salar! }.to raise_error
+  expect { Jor.picantear! }.to raise_error
 end
 
 it "Los Fideos inicialmente no están picantes" do
-  expect(Fideos.picantes?).to be false
+  resultado = Fideos.picantes?
+  expect(resultado).to be(false), "Fideos.picantes? debería ser false porque inicialmente no tienen ajíes. Sin embargo, Fideo.picantes? fue #{resultado}"
 end
 
-it "Cuando Jor picantea su plato pasa a estar picante" do
+it "Si Jor picantea su plato, los Fideos quedan picantes" do
   Jor.plato_del_dia = Fideos
   Jor.picantear!
-  expect(Fideos.picantes?).to be true
+  resultado = Fideos.picantes?
+  expect(resultado).to be(true), "Fideos.picantes? debería ser true porque deberían tener 5 ajíes. Sin embargo, Fideos.picantes? fue #{resultado}"
 end
 
-it "Los Fideos están picantes cuando Luchi los suaviza quitándole 2 ajíes después que Jor los picanteó" do
+it "Si Jor picantea su plato y Luchi luego suaviza en 2 ajíes, los Fideos quedan picantes" do
   Jor.plato_del_dia = Fideos
   Jor.picantear!
   Luchi.suavizar! Fideos, 2
-  expect(Fideos.picantes?).to be true
+  resultado = Fideos.picantes?
+  expect(resultado).to be(true), "Fideos.picantes? debería ser true porque deberían tener 3 ajíes. Sin embargo, Fideos.picantes? fue #{resultado}."
 end
 
-it "Los Fideos dejan de estar picantes cuando Luchi los suaviza quitándoles 3 ajíes después que Jor los picanteó" do
+it "Si Jor picantea su plato y Luchi luego suaviza en 3 ajíes, los Fideos no quedan picantes" do
   Jor.plato_del_dia = Fideos
   Jor.picantear!
   Luchi.suavizar! Fideos, 3
-  expect(Fideos.picantes?).to be false
+  resultado = Fideos.picantes?
+  expect(resultado).to be(false), "Fideos.picantes? debería ser false porque deberían tener 2 ajíes. Sin embargo, Fideos.picantes? fue #{resultado}"
 end
 
-it "Los Fideos están picantes cuando Luchi los suaviza quitándoles 2 ajíes después que Jor los picanteó 2 veces" do
+it "Si Jor picantea su plato dos veces y Luchi luego suaviza en 1 ají, los Fideos quedan picantes"
   Jor.plato_del_dia = Fideos
   Jor.picantear!
   Jor.picantear!
-  Luchi.suavizar! Fideos, 2
-  expect(Fideos.picantes?).to be true
+  Luchi.suavizar! Fideos, 1
+  resultado = Fideos.picantes?
+  expect(resultado).to be(true), "Fideos.picantes? debería ser true porque deberían tener 9 ajíes. Sin embargo, Fideos.picantes? fue #{resultado}."
 end
 
-it "Los Fideos no están picantes cuando Luchi los suaviza quitándoles 4 ajíes después que Jor los picanteó 3 veces porque se descarta la salsa" do
+it "Luchi descarta la salsa cuando tiene más de 10 ajíes" do
   Jor.plato_del_dia = Fideos
   Jor.picantear!
   Jor.picantear!
   Jor.picantear!
   Luchi.suavizar! Fideos, 4
-  expect(Fideos.picantes?).to be false
+  resultado = Fideos.picantes?
+  expect(resultado).to be(false), "Fideos.picantes? debería ser false, pero fue #{resultado}"
+  expect(Fideos).to receive(:descartar_la_salsa!)
+end
+
+it "Luchi no descarta la salsa cuando tiene 10 ajíes" do
+  Jor.plato_del_dia = Fideos
+  Jor.picantear!
+  Jor.picantear!
+  Luchi.suavizar! Fideos, 4
+  resultado = Fideos.picantes?
+  expect(Fideos).to_not receive(:descartar_la_salsa!)
+  expect(resultado).to be(true), "Fideos.picantes? debería ser true, pero fue #{resultado}"
+end
+
+it "Luchi no descarta la salsa cuando tiene menos de 10 ajíes" do
+  Jor.plato_del_dia = Fideos
+  Jor.picantear!
+  Luchi.suavizar! Fideos, 2
+  resultado = Fideos.picantes?
+  expect(Fideos).to_not receive(:descartar_la_salsa!)
+  expect(resultado).to be(true), "Fideos.picantes? debería ser true, pero fue #{resultado}"
 end
