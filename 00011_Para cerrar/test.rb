@@ -23,6 +23,7 @@ end
 
 begin
   Fideos.descartar_la_salsa!
+  Jor.plato_del_dia = Fideos
   Jor.picantear!
   Luchi.suavizar! Fideos, 3
   resultado = Fideos.picantes?
