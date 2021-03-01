@@ -1,5 +1,8 @@
-describe 'Descripción del grupo' do
-  it 'Descripción del ejemplo' do
-    expect(true).to eq true
-  end
-end
+- name: Los pasos se ordenaron correctamente
+  keys:
+    primer_paso: 
+      equal: "Empezá con un círculo. Este será el centro de la flor."
+    segundo_paso: 
+      equal: "Alrededor del centro dibujá círculos que tengan igual tamaño pegados entre ellos. Estos serán los pétalos."
+    tercer_paso: 
+      equal: "Dibujá el tallo pegado a uno de los pétalos."
