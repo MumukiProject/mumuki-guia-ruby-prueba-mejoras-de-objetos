@@ -10,12 +10,12 @@ teacher_info: ''
 manual_evaluation: false
 choices:
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: "```ruby method ```"
+  value: "```ruby\nautor_de_rayuela = "Julio Cortázar"\nautor_de_deshoras = autor_de_rayuela\nautor_de_bestiario = autor_de_deshoras       ```"
+  checked: false
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: "```ruby\nautora_de_desolacion = "Gabriela Mistral"\nautora_de_ternura = "Gabriela Mistral"\nautora_de_tala = autora_de_desolacion```"
+  checked: false
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: "```ruby\nprocer = "San Martín"\navenida = "San Martín"\nciudad = "San Martín"                                                    ```"
   checked: true
-- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: "```ruby  meth```"
-  checked: false
-- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: "```ruby ```"
-  checked: false
 name: Choice con código
