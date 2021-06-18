@@ -1,10 +1,14 @@
 /*<output#*//*#output>*/
 /*<tests#*/it("Se introdujo un título h1", () => {
-  document.getElementById("titulo").should.not.exist;
+  originaldocument.getElementById("titulo").should.not.exist;
 })
 
 it("Los links tienen un atributo aria-label", () => {
   document.querySelectorAll('a')[0].should.have.attr('aria-label');
+})
+
+it("El primer párrafo tiene color red", () => {
+  document.querySelectorAll('p')[0].should.have.style('color', 'red');
 })/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
