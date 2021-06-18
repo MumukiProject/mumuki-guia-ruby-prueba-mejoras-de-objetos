@@ -10,12 +10,8 @@ teacher_info: ''
 manual_evaluation: false
 choices:
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: |
-    ```ruby
-    autor_de_rayuela = "Julio Cortázar"
-    autor_de_deshoras = autor_de_rayuela
-    autor_de_bestiario = autor_de_deshoras   
-    ```
+  value: "```ruby\nautor_de_rayuela = \"Julio Cortázar\"\nautor_de_deshoras = autor_de_rayuela\nautor_de_bestiario
+    = autor_de_deshoras   \n```\n"
   checked: false
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   value: |
@@ -26,11 +22,7 @@ choices:
     ```
   checked: false
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: |
-    ```ruby
-    procer = "San Martín"                    
-    avenida = "San Martín"
-    ciudad = "San Martín"
-    ```
+  value: "```ruby\nprocer = \"San Martín\"                    \navenida = \"San Martín\"\nciudad
+    = \"San Martín\"\n```\n"
   checked: true
 name: Choice con código
