@@ -1,6 +1,10 @@
 /*<output#*//*#output>*/
 /*<tests#*/it("Se introdujo un título h1", () => {
   document.getElementById("titulo").should.exist;
+})
+
+it("Los links tienen un atributo aria-label", () => {
+  document.querySelectorAll('a')[0].should.have.attr('aria-label');
 })/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
