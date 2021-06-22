@@ -13,6 +13,13 @@ it("Hay un li que tiene 2 tomates", () => {
   let arrayLis = Array.prototype.slice.call(Nodelis, 0);
 
   arrayLis.some(element => contieneTexto(element, '2 tomates'));
+})
+
+it("Hay un li que tiene 1 planta de lechuga", () => {
+  let Nodelis = document.querySelectorAll('li');
+  let arrayLis = Array.prototype.slice.call(Nodelis, 0);
+
+  arrayLis.some(element => contieneTexto(element, '1 planta de lechuga'));
 })/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
