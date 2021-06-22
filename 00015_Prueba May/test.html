@@ -1,10 +1,6 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("La palabra Neguá tiene más fuerza", () => {
-  document.querySelectorAll("strong")[0].should.have.trimmed.text('Neguá');
-})
-
-it("La palabra Colombia tiene más fuerza", () => {
-  document.querySelectorAll("strong")[1].should.have.trimmed.text('Colombia');
+/*<tests#*/it("Un mar de fueguitos está enfatizado", () => {
+  document.querySelector("em").should.have.trimmed.text('Un mar de fueguitos');
 })
 /*#tests>*/
 /*<options#*/output_ignore_scripts: true
