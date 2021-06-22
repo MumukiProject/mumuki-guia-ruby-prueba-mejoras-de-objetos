@@ -2,6 +2,9 @@
 /*<tests#*/it("Hay tres li", () => {
   document.querySelectorAll("li").length.should.eql(3);
 })
-/*#tests>*/
+
+it("Hay un li que tiene 2 tomates", () => {
+  document.querySelectorAll("li").some.should.have.trimmed.text('2 tomates');
+})/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
