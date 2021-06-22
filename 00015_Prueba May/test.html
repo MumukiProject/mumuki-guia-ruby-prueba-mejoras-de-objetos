@@ -1,6 +1,7 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("Hay una etiqueta h1 que dice 'El mundo'", () => {
-  document.querySelector("h1").should.have.trimmed.text('El mundo');
-})/*#tests>*/
+/*<tests#*/it("El primer párrafo dice 'Un hombre del pueblo de Neguá, en la costa de Colombia, pudo subir al alto cielo.''", () => {
+  document.querySelectorAll("p")[0].should.have.trimmed.text('Un hombre del pueblo de Neguá, en la costa de Colombia, pudo subir al alto cielo.');
+})
+/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
