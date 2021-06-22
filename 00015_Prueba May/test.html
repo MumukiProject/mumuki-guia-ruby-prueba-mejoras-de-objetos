@@ -1,18 +1,19 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("La etiqueta h1 dice 'Los Siete Locos'", () => {
-  document.querySelector("h1").should.have.trimmed.text("Los Siete Locos");
+/*<tests#*/it("El gaucho Martín Fierro es un encabezado de primer nivel", () => {
+  document.querySelector("h1").should.have.trimmed.text("El gaucho Martín Fierro");
 })
 
-it("La etiqueta h2 dice 'Capítulo'", () => {
-  document.querySelector("h2").should.have.trimmed.text("Capítulo 1");
+it("José Hernandez es un encabezado de segundo nivel", () => {
+  document.querySelector("h2").should.have.trimmed.text("José Hernandez");
 })
 
-it("La etiqueta h3 dice 'La sorpresa'", () => {
-  document.querySelector("h3").should.have.trimmed.text("La sorpresa");
+it("Los números 1 y 2 son encabezados de tercer nivel", () => {
+  document.querySelectorAll("h3")[0].should.have.trimmed.text("1");
+  document.querySelectorAll("h3")[1].should.have.trimmed.text("2");
 })
 
-it("La etiqueta h4 dice 'Estados de conciencia'", () => {
-  document.querySelector("h4").should.have.trimmed.text("Estados de conciencia");
+it("El título de la página es Literatura gauchesca.", () => {
+  document.querySelector("title").should.have.trimmed.text("Literatura gauchesca.");
 })/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
