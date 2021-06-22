@@ -12,8 +12,12 @@ it("Los números 1 y 2 son encabezados de tercer nivel", () => {
   document.querySelectorAll("h3")[1].should.have.trimmed.text("2");
 })
 
-it("El título de la página es Literatura gauchesca.", () => {
+it("El título de la página es Literatura gauchesca", () => {
   document.querySelector("title").should.have.trimmed.text("Literatura gauchesca");
+})
+
+it("El primer párrafo es la primera estrofa ", () => {
+  document.querySelectorAll("p")[0].should.have.trimmed.text("Aquí me pongo a cantar Al compás de la vigüela, Que el hombre que lo desvela Una pena extraordinaria Como la ave solitaria Con el cantar se consuela.");
 })/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
