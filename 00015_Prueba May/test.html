@@ -16,8 +16,12 @@ it("El título de la página es Literatura gauchesca", () => {
   document.querySelector("title").should.have.trimmed.text("Literatura gauchesca");
 })
 
-it("El primer párrafo es la primera estrofa ", () => {
+it("El primer párrafo se corresponde con la primera estrofa", () => {
   document.querySelectorAll("p")[0].should.have.trimmed.text("Aquí me pongo a cantar\n    Al compás de la vigüela,\n    Que el hombre que lo desvela\n    Una pena extraordinaria\n    Como la ave solitaria\n    Con el cantar se consuela.");
+})
+
+it("El segundo párrafo se corresponde con la segunda estrofa", () => {
+  document.querySelectorAll("p")[0].should.have.trimmed.text("Pido a los Santos del Cielo\n    Que ayuden mi pensamiento;\n    Les pido en este momento\n    Que voy a cantar mi historia\n    Me refresquen la memoria\n    Y aclaren mi entendimiento.");
 })/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
