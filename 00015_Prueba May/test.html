@@ -2,6 +2,14 @@
 /*<tests#*/it("El primer párrafo dice 'Un hombre del pueblo de Neguá, en la costa de Colombia, pudo subir al alto cielo.''", () => {
   document.querySelectorAll("p")[0].should.have.trimmed.text('Un hombre del pueblo de Neguá, en la costa de Colombia, pudo subir al alto cielo.');
 })
+
+it("El segundo párrafo dice 'A la vuelta, contó. Dijo que había contemplado, desde allá arriba, la vida humana. Y dijo que somos un mar de fueguitos.", () => {
+  document.querySelectorAll("p")[1].should.have.trimmed.text('A la vuelta, contó. Dijo que había contemplado, desde allá arriba, la vida humana. Y dijo que somos un mar de fueguitos.');
+})
+
+it("El tercer párrafo dice '- El mundo es eso -reveló-. Un montón de gente, un mar de fueguitos.", () => {
+  document.querySelectorAll("p")[2].should.have.trimmed.text('- El mundo es eso -reveló-. Un montón de gente, un mar de fueguitos.');
+})
 /*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
