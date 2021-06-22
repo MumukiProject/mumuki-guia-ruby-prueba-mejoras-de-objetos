@@ -1,27 +1,7 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("El gaucho Martín Fierro es un encabezado de primer nivel", () => {
-  document.querySelector("h1").should.have.trimmed.text("El Gaucho Martín Fierro");
+/*<tests#*/it("Hay tres li", () => {
+  document.querySelectorAll("li").length.should.eql(3);
 })
-
-it("José Hernandez es un encabezado de segundo nivel", () => {
-  document.querySelector("h2").should.have.trimmed.text("José Hernandez");
-})
-
-it("Los números 1 y 2 son encabezados de tercer nivel", () => {
-  document.querySelectorAll("h3")[0].should.have.trimmed.text("1");
-  document.querySelectorAll("h3")[1].should.have.trimmed.text("2");
-})
-
-it("El título de la página es Literatura gauchesca", () => {
-  document.querySelector("title").should.have.trimmed.text("Literatura gauchesca");
-})
-
-it("El primer párrafo se corresponde con la primera estrofa", () => {
-  document.querySelectorAll("p")[0].should.have.trimmed.text("Aquí me pongo a cantar\n    Al compás de la vigüela,\n    Que el hombre que lo desvela\n    Una pena extraordinaria\n    Como la ave solitaria\n    Con el cantar se consuela.");
-})
-
-it("El segundo párrafo se corresponde con la segunda estrofa", () => {
-  document.querySelectorAll("p")[1].should.have.trimmed.text("Pido a los Santos del Cielo\n    Que ayuden mi pensamiento;\n    Les pido en este momento\n    Que voy a cantar mi historia\n    Me refresquen la memoria\n    Y aclaren mi entendimiento.");
-})/*#tests>*/
+/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
