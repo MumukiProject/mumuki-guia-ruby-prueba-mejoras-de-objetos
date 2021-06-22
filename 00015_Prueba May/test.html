@@ -1,7 +1,18 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("La etiqueta code dice var codigo = 'Soy un code'", () => {
-  document.querySelector("code").should.have.trimmed.text("var codigo = 'Soy un code';");
+/*<tests#*/it("La etiqueta h1 dice 'Los Siete Locos'", () => {
+  document.querySelector("h1").should.have.trimmed.text("Los Siete Locos");
 })
-/*#tests>*/
+
+it("La etiqueta h2 dice 'Capítulo'", () => {
+  document.querySelector("h2").should.have.trimmed.text("Capítulo");
+})
+
+it("La etiqueta h3 dice 'La sorpresa'", () => {
+  document.querySelector("h3").should.have.trimmed.text("La sorpresa");
+})
+
+it("La etiqueta h4 dice 'Estados de conciencia'", () => {
+  document.querySelector("h4").should.have.trimmed.text("Estados de conciencia");
+})/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
