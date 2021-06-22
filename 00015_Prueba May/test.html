@@ -5,6 +5,10 @@
 
 it("El parráfo dice 'Un párrafo como este que estás leyendo ahora'", () => {
   document.querySelector("p").should.have.trimmed.text("Un párrafo como este\n  que estás leyendo ahora");
+})
+
+it("El botón dice 'Un botón'", () => {
+  document.querySelector("button").should.have.trimmed.text("Un botón");
 })/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
