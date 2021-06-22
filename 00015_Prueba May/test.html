@@ -1,10 +1,10 @@
 /*<output#*//*#output>*/
 /*<tests#*/it("El título h3 dice 'Un título'", () => {
-  document.getElementsByTagName("h3").should.have.trimmed.text("Un título");
+  document.querySelector("h3").should.have.trimmed.text("Un título");
 })
 
 it("El parráfo dice 'Un párrafo como este que estás leyendo ahora'", () => {
-  document.getElementsByTagName("p").should.have.trimmed.text("Un párrafo como este que estás leyendo ahora");
+  document.querySelector("p").should.have.trimmed.text("Un párrafo como este que estás leyendo ahora");
 })/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
