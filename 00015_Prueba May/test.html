@@ -9,6 +9,14 @@ it("El parráfo dice 'Un párrafo como este que estás leyendo ahora'", () => {
 
 it("El botón dice 'Un botón'", () => {
   document.querySelector("button").should.have.trimmed.text("Un botón");
+})
+
+it("Hay un link", () => {
+  document.querySelector("a").should.exist;
+})
+
+it("Hay una lista desordenada con tres li", () => {
+  document.querySelector("ul li").length.should.eql(3);
 })/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
