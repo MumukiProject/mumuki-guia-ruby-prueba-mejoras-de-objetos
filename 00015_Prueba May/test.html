@@ -1,25 +1,6 @@
 /*<output#*//*#output>*/
-/*<tests#*/function contieneTexto(li,texto){
-  return li.textContent === texto;  
-}
-
-
-it("Hay tres li", () => {
-  document.querySelectorAll("li").length.should.eql(3);
-})
-
-it("Hay un li que tiene 2 tomates", () => {
-  let Nodelis = document.querySelectorAll('li');
-  let arrayLis = Array.prototype.slice.call(Nodelis, 0);
-
-  arrayLis.some(element => contieneTexto(element, '2 tomates'));
-})
-
-it("Hay un li que tiene 1 planta de lechuga", () => {
-  let Nodelis = document.querySelectorAll('li');
-  let arrayLis = Array.prototype.slice.call(Nodelis, 0);
-
-  arrayLis.some(element => contieneTexto(element, '1 planta de lechuga'));
-})/*#tests>*/
+/*<tests#*/it("El segundo link tiene un atributo aria-label", () => {
+  document.querySelector('a').should.have.attr("href='https://mumuki.io/home'");
+});/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
