@@ -1,10 +1,7 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("El link tiene un atributo href", () => {
-  document.querySelector("a href='https://mumuki.io/home'").should.exist;
+/*<tests#*/it("El link tiene un atributo target", () => {
+  document.querySelector("a target= '_blank").should.exist;
 });
-
-it("El link dice Mumuki", () => {
-  document.querySelector('a').should.have.trimmed.text("Mumuki");
-});/*#tests>*/
+/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
