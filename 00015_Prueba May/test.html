@@ -1,14 +1,10 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("Se introdujo un título h1", () => {
-  originaldocument.getElementById("titulo").should.not.exist;
+/*<tests#*/it("El título h3 dice 'Un título'", () => {
+  document.getElementsByTagName("h3").should.have.trimmed.text("Un título");
 })
 
-it("Los links tienen un atributo aria-label", () => {
-  document.querySelectorAll('a')[0].should.have.attr('aria-label');
-})
-
-it("El primer párrafo tiene color red", () => {
-  document.querySelectorAll('p')[0].should.have.style('color', 'rgb(255, 0, 0)');
+it("El parráfo dice 'Un párrafo como este que estás leyendo ahora'", () => {
+  document.getElementsByTagName("p").should.have.trimmed.text("Un párrafo como este que estás leyendo ahora");
 })/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
