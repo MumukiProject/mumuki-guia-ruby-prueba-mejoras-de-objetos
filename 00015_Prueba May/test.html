@@ -10,7 +10,7 @@ it("Hay tres li", () => {
 
 it("Hay un li que tiene 2 tomates", () => {
   let Nodelis = document.querySelectorAll('li');
-  let arrayLis = Array.prototype.slice.call(lis, 0);
+  let arrayLis = Array.prototype.slice.call(Nodelis, 0);
 
   arrayLis.some(element => contieneTexto(element, '2 tomates'));
 })/*#tests>*/
