@@ -1,7 +1,7 @@
 /*<output#*//*#output>*/
 /*<tests#*/it("Dentro del body está el texto ", () => {
   let body = document.querySelector("body")
-  body.includes('Un hombre del pueblo de Neguá, en la costa de Colombia, pudo subir al alto cielo.');
+  body.textContent.includes('Un hombre del pueblo de Neguá, en la costa de Colombia, pudo subir al alto cielo.');
 })/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
