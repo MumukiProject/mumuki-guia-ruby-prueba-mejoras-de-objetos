@@ -2,6 +2,18 @@
 /*<tests#*/it("El body tiene color bisque", () => {
   document.querySelector('body').should.have.style('color','bisque');
 });
+
+it("Los elementos que tienen la clase .titulo-genero tienen color rgb(255, 91, 129)", () => {
+  document.querySelector('.titulo-genero').should.have.style('color','rgb(255, 91, 129)');
+});
+
+it("Los elementos que tienen la clase .titulo-pelicula tienen color rgb(11,70,93)", () => {
+  document.querySelector('.titulo-genero').should.have.style('color','rgb(11, 70, 93)');
+});
+
+it("El aside tiene color blue", () => {
+  document.querySelector('aside').should.have.style('color','blue');
+});
 /*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
