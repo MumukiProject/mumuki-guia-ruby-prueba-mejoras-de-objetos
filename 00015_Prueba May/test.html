@@ -5,6 +5,7 @@
 
 it("El primer article encierra la receta de Panqueques con dulce de leche", () => {
   document.querySelectorAll('article h1')[0].should.have.trimmed.text('Panqueques de dulce de leche');
+  document.querySelectorAll('article p')[0].should.have.trimmed.text('Más clásico que un Boca-River');
 });
 
 
@@ -14,6 +15,10 @@ it("El segundo article encierra la receta de Lemon Pie", () => {
   
 });
   
-/*#tests>*/
+it("El segundo article encierra la receta de Empanadas de jamón y queso", () => {
+  document.querySelectorAll('article h1')[2].should.have.trimmed.text('Empanadas de jamón y queso');
+  document.querySelectorAll('article p')[2].should.have.trimmed.text('Simples y rápidas');
+  
+});/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
