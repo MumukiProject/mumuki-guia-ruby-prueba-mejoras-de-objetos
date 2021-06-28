@@ -1,18 +1,6 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("El body tiene color bisque", () => {
-  document.querySelector('body').should.have.style('color','bisque');
-});
-
-it("Los elementos que tienen la clase .titulo-genero tienen color rgb(255, 91, 129)", () => {
-  document.querySelector('.titulo-genero').should.have.style('color','rgb(255, 91, 129)');
-});
-
-it("Los elementos que tienen la clase .titulo-pelicula tienen color rgb(11,70,93)", () => {
-  document.querySelector('.titulo-pelicula').should.have.style('color','rgb(11, 70, 93)');
-});
-
-it("El aside tiene color blue", () => {
-  document.querySelector('aside').should.have.style('color','blue');
+/*<tests#*/it("Los elementos de la clase titulo, tienen tipografía 'Georgia' de la familia serif", () => {
+  document.querySelector('.titulo').should.have.style('font-family','"Georgia", serif');
 });
 /*#tests>*/
 /*<options#*/output_ignore_scripts: true
