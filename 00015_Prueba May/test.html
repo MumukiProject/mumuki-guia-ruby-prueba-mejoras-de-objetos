@@ -1,8 +1,14 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("Dentro del body está el texto ", () => {
-  let body = document.querySelector("body")
-  assert(body.textContent.includes('Un hombre del pueblo de Neguá, en la costa de Colombia, pudo subir al alto cielo.'));
+/*<tests#*/it("Hay un footer en el body", () => {
+  document.querySelector('footer').should.exist;
+});
 
-})/*#tests>*/
+it("Hay un párrafo dentro del footer que dice Información de contacto", () => {
+  document.querySelector('footer p').should.have.trimmed.text("Información de contacto");
+});
+
+it("Hay un link con el mail dentro del footer", () => {
+  document.querySelector('footer a').should.exist;
+});/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
