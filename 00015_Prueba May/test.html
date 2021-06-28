@@ -1,14 +1,10 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("Hay un footer en el body", () => {
-  document.querySelector('footer').should.exist;
+/*<tests#*/it("Hay tres articles", () => {
+  document.querySelectorAll('article').length.should.eql(10);
 });
 
-it("Hay un párrafo dentro del footer que dice Información de contacto", () => {
-  document.querySelector('footer p').should.have.trimmed.text("Información de contacto");
-});
-
-it("Hay un link con el mail dentro del footer", () => {
-  document.querySelector('footer a').should.exist;
+it("E  primer article encierra la receta de panqueques con dulce de leche", () => {
+  document.querySelectorAll('article h1')[0].should.have.trimmed.text('Panqueques de dulce de leche');
 });/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
