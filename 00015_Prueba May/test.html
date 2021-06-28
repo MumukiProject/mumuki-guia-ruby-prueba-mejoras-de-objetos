@@ -5,16 +5,15 @@
 
 it("Los h2 de las secciones descripcion, ingredientes y pasos tienen la clase titulo", () => {
   document.querySelectorAll('.titulo').length.should.eql(3);
-  document.querySelectorAll('h2 .titulo').length.should.eql(3);
 });
 
 it("Los h2 de las secciones descripcion, ingredientes y pasos tienen la clase titulo", () => {
   
-  document.querySelectorAll('h2 .titulo')[0].should.have.trimmed.text('¿Qué es un panqueque?');
+  document.querySelectorAll('.titulo')[0].should.have.trimmed.text('¿Qué es un panqueque?');
   
-  document.querySelectorAll('h2 .titulo')[1].should.have.trimmed.text('Ingredientes');
+  document.querySelectorAll('.titulo')[1].should.have.trimmed.text('Ingredientes');
   
-  document.querySelectorAll('h2 .titulo')[2].should.have.trimmed.text('Pasos');
+  document.querySelectorAll('.titulo')[2].should.have.trimmed.text('Pasos');
 });/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
