@@ -1,6 +1,15 @@
 /*<output#*//*#output>*/
 /*<tests#*/it("El body tiene color tan", () => {
-  document.querySelector('body').should.have.style('tan');
+  document.querySelector('body').should.have.style('background-color','tan');
+});
+
+
+it("El header tiene color darkred", () => {
+  document.querySelector('header').should.have.style('color','darkred');
+});
+
+it("Todas las section tienen color saddlebrown", () => {
+  document.querySelector('header').should.have.style('color','saddlebrown');
 });/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
