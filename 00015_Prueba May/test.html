@@ -12,13 +12,16 @@ it("El primer article encierra la receta de Panqueques con dulce de leche", () =
 it("El segundo article encierra la receta de Lemon Pie", () => {
   document.querySelectorAll('article h1')[1].should.have.trimmed.text('Lemon Pie');
   document.querySelectorAll('article p')[1].should.have.trimmed.text('Dulcemente alimonado');
-  
 });
   
 it("El segundo article encierra la receta de Empanadas de jamón y queso", () => {
   document.querySelectorAll('article h1')[2].should.have.trimmed.text('Empanadas de jamón y queso');
   document.querySelectorAll('article p')[2].should.have.trimmed.text('Simples y rápidas');
-  
+});
+
+it("El segundo article encierra la receta de Carne al horno con papas", () => {
+  document.querySelectorAll('article h1')[3].should.have.trimmed.text('Carne al horno con papas');
+  document.querySelectorAll('article p')[3].should.have.trimmed.text('Nunca falla');
 });/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
