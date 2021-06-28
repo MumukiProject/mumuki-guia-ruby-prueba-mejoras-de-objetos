@@ -1,6 +1,6 @@
 /*<output#*//*#output>*/
 /*<tests#*/it("Los elementos de la clase titulo, tienen tipografía 'Georgia' de la familia serif", () => {
-  document.getElementsByClassName('.texto').should.have.style('font-family', 'Verdana')
+  document.getElementsByClassName('.texto')[0].should.have.style('font-family', 'Verdana')
 });
 /*#tests>*/
 /*<options#*/output_ignore_scripts: true
