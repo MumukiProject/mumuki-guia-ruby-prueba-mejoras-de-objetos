@@ -1,6 +1,6 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("Los elementos de la clase titulo, tienen tipografía 'Georgia' de la familia serif", () => {
-  document.getElementsByClassName('.texto')[0].should.have.style('font-family', 'Verdana')
+/*<tests#*/it("La clase texto tiene un font-size de 1.5em", () => {
+  document.querySelector('.texto').should.have.style("font-size", "1.5em");
 });
 /*#tests>*/
 /*<options#*/output_ignore_scripts: true
