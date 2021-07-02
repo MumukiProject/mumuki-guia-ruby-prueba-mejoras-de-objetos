@@ -1,12 +1,10 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("La clase texto tiene un font-size de 1.5em", () => {
-  document.querySelector('.texto').should.have.style("font-size", "1.5em");
-});
-it("La clase titulo tiene un font-size de 3em", () => {
-  document.querySelector('.titulo').should.have.style("font-size", "3em");
-});
-it("El encabezado h1 tiene un font-size de 4em", () => {
-  document.querySelector('h1').should.have.style("font-size", "4em");
-});/*#tests>*/
+/*<tests#*/it("La etiqueta code dice var codigo = 'Soy un code'", () => {
+  document.querySelector("code").should.have.trimmed.text(`let codigo = 'Soy un code';`);
+})
+
+it("La etiqueta code está abajo del párrafo"
+  document.querySelector("p code").should.exist;
+})/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
