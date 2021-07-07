@@ -24,9 +24,9 @@
 	}
 
   it("La section tiene color maroon", () => {
-	  let description = document.getElementById('descripcion');
+	  let header = document.querySelector('header');
 	  
-	  let colorDeLaSection = window.getComputedStyle(description).getPropertyValue("color");
+	  let colorDeLaSection = window.getComputedStyle(header).getPropertyValue("color");
 	  
 	  colorDeLaSection.should.eql('hola');
 	  //let rgbDeLaSection = hexToRGB(colores[colorDeLaSection]);
