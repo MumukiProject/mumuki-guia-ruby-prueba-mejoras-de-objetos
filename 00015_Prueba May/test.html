@@ -1,15 +1,15 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("El body tiene color tan", () => {
-  document.querySelector('body').should.have.style('background-color','tan');
+/*<tests#*/it("Los elementos de la clase titulo tienen color maroon", () => {
+  document.querySelector('.titulo').should.have.style('color','maroon');
 });
 
+it("Los h2 de las secciones descripcion, ingredientes y pasos tienen la clase titulo", () => {
 
-it("El header tiene color darkred", () => {
-  document.querySelector('header').should.have.style('color','darkred');
+  document.querySelectorAll('h2')[0].should.have.class('titulo')
+document.querySelectorAll('h2')[1].should.have.class('titulo')
+document.querySelectorAll('h2')[2].should.have.class('titulo')
 });
 
-it("Todas las section tienen color saddlebrown", () => {
-  document.querySelector('header').should.have.style('color','saddlebrown');
-});/*#tests>*/
+/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
