@@ -1,6 +1,10 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("Zaraza", () => {
-  document.getElementsByClassName('titulo')[0].should.have.style("font-family", `"Georgia", serif`);
+/*<tests#*/it("Los elementos de la clase titulo están alineados en el centro", () => {
+  document.getElementsByClassName('titulo')[0].should.have.style("text-align", "center");
+});
+
+it("Los elementos de la clase texto están justificados", () => {
+  document.getElementsByClassName('texto')[0].should.have.style("text-align", "justify");
 });
 /*#tests>*/
 /*<options#*/output_ignore_scripts: true
