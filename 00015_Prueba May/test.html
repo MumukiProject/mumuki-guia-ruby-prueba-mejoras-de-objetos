@@ -4,7 +4,7 @@
 });
 
 it("Los títulos de las películas están en cursiva", () => {
-  document.getElementsByClassName('titulo-pelicula')[0].should.have.style("font-style", "italic");
+  document.querySelectorAll('.titulo-pelicula')[0].should.have.style("font-style", "italic");
 });
 
 it("el footer está en cursiva", () => {
