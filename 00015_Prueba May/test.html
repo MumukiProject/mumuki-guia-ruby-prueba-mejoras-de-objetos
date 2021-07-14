@@ -1,6 +1,6 @@
 /*<output#*//*#output>*/
 /*<tests#*/it("Zaraza", () => {
-  document.querySelector('.titulo').should.have.style("color", "black");
+  document.getElementsByClassName('.titulo')[0].should.have.style("color", "black");
 });
 /*#tests>*/
 /*<options#*/output_ignore_scripts: true
