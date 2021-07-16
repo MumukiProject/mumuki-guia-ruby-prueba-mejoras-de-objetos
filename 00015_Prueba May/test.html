@@ -1,26 +1,6 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("Los elementos de la clase texto tienen font-family Verdana de la familia sans-serif", () => {
-  document.getElementsByClassName('texto')[0].should.have.style("font-family", `"Verdana", sans-serif`);
-});
-
-it("Los títulos de las películas están en cursiva", () => {
-  document.querySelectorAll('.titulo-pelicula')[0].should.have.style("font-style", "italic");
-});
-
-it("el footer está en cursiva", () => {
-  document.querySelector('footer').should.have.style("font-style", "italic");
-});
-
-it("el footer está en negrita", () => {
-  document.querySelector('footer').should.have.style("font-weight", "bold");
-});
-
-it("el footer tiene un tamaño de 15px", () => {
-  document.querySelector('footer').should.have.style("font-size", "15px");
-});
-
-it("el footer está alineado en el centro", () => {
-  document.querySelector('footer').should.have.style("text-align", "center");
-});/*#tests>*/
+/*<tests#*/document.querySelectorAll('h2')[0].should.have.class('titulo')
+document.querySelectorAll('h2')[1].should.have.class('titulo')
+document.querySelectorAll('h2')[2].should.have.class('titulo')/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
