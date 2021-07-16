@@ -1,12 +1,12 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("Los h2 de las secciones descripcion, ingredientes y pasos tienen la clase titulo", () => {
+/*<tests#*//*it("Los h2 de las secciones descripcion, ingredientes y pasos tienen la clase titulo", () => {
   document.querySelectorAll('h2')[0].should.have.class('titulo')
-});
+});*/
 
-/*it("Los h2 de las secciones descripcion, ingredientes y pasos tienen la clase titulo", () => {
-  document.getElementsByTagName('h2').should.have.class('titulo')
+it("Los h2 de las secciones descripcion, ingredientes y pasos tienen la clase titulo", () => {
+  document.getElementsByTagName('h2')[0].should.have.class('titulo')
 });
-
+/*
 it("Los h2 de las secciones descripcion, ingredientes y pasos tienen la clase titulo", () => {
   document.querySelectorAll('h2').should.have.class('titulo')
 });
