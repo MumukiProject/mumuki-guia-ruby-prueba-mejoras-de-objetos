@@ -1,6 +1,14 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("El slogan tiene un margen de 50px", () => {
-  document.getElementsByClassName('slogan')[0].should.have.style("margin", "50px");
+/*<tests#*/it("El header tiene un ancho de 50px", () => {
+  document.querySelector('header').should.have.style("width", "50px");
+});
+
+it("El header tiene un alto de 50px", () => {
+  document.querySelector('header').should.have.style("heigth", "50px");
+});
+
+it("El header tiene overflow scroll", () => {
+  document.querySelector('header').should.have.style("overflow", "scroll");
 });
 /*#tests>*/
 /*<options#*/output_ignore_scripts: true
