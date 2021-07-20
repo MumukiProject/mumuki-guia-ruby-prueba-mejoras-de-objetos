@@ -1,15 +1,6 @@
 /*<output#*//*#output>*/
-/*<tests#*/
-it("El logo tiene un ancho de 5px", () => {
-  document.getElementsByClassName('logo')[0].should.have.style("border-width", "5px");
-});
-
-it("El logo tiene un estilo solid", () => {
-  document.getElementsByClassName('logo')[0].should.have.style("border-style", "solid");
-});
-
-it("El logo tiene un color rgb(26, 148, 163)", () => {
-  document.getElementsByClassName('logo')[0].should.have.style("border-color", "rgb(26, 148, 163)");
+/*<tests#*/it("El logo tiene un border radius de 2em", () => {
+  document.getElementsByClassName('logo')[0].should.have.style("border-radius", "2em");
 });
 
 /*#tests>*/
