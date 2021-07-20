@@ -1,7 +1,7 @@
 /*<output#*//*#output>*/
 /*<tests#*/
 it("Los elementos de la clase en-linea están en linea", () => {
-  document.getElementsByClassName('en-linea').should.have.style("display", "inline");
+  document.getElementsByClassName('en-linea')[0].should.have.style("display", "inline");
 });/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
