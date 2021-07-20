@@ -1,7 +1,17 @@
 /*<output#*//*#output>*/
 /*<tests#*/
-it("El logo no está visible", () => {
-  document.getElementsByClassName('logo')[0].should.have.style("display", "none");
-});/*#tests>*/
+it("El logo tiene un ancho de 5px", () => {
+  document.getElementsByClassName('logo')[0].should.have.style("border-width", "5px");
+});
+
+it("El logo tiene un estilo solid", () => {
+  document.getElementsByClassName('logo')[0].should.have.style("border-style", "5px");
+});
+
+it("El logo tiene un color rgb(26, 148, 163)", () => {
+  document.getElementsByClassName('logo')[0].should.have.style("border-color", "rgb(26, 148, 163)");
+});
+
+/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
