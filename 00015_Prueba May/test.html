@@ -1,7 +1,6 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("El header se encuentra en la esquina superior derecha", () => {
-  document.querySelector('header').should.have.style("top", "0px");
-  document.querySelector('header').should.have.style("right", "0px");
+/*<tests#*/it("El header tiene la propiedad position con el atributo absolute", () => {
+  document.querySelector('header').should.have.style("position", "absolute");
 });/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
