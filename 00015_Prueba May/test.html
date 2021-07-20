@@ -1,15 +1,7 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("El header tiene un ancho de 50px", () => {
-  document.querySelector('header').should.have.style("width", "50%");
-});
-
-it("El header tiene un alto de 50px", () => {
-  document.querySelector('header').should.have.style("height", "50px");
-});
-
-it("El header tiene overflow scroll", () => {
-  document.querySelector('header').should.have.style("overflow", "scroll");
-});
-/*#tests>*/
+/*<tests#*/it("El header se encuentra en la esquina superior derecha", () => {
+  document.querySelector('header').should.have.style("top", "0px");
+  document.querySelector('header').should.have.style("right", "0px");
+});/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
