@@ -12,6 +12,18 @@ it("El segundo li tiene un atributo href='#ingredientes'", () => {
 it("El tercer li tiene un atributo href='#pasos'", () => {
   document.querySelectorAll('li a')[2].should.exist;
   document.querySelectorAll('a')[2].should.have.attr('href','#pasos');
+});
+
+it("La primer section tiene id descripcion", () => {
+  document.querySelectorAll('section')[0].should.have.attr('id','descripcion');
+});
+
+it("La segunda section tiene id ingredientes", () => {
+  document.querySelectorAll('section')[1].should.have.attr('id','ingredientes');
+});
+
+it("La tercera section tiene id pasos", () => {
+  document.querySelectorAll('section')[2].should.have.attr('id','pasos');
 });/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
