@@ -1,5 +1,6 @@
 /*<output#*//*#output>*/
 /*<tests#*/it("El primer li tiene un atributo href='#descripcion'", () => {
+  document.querySelectorAll('li a')[0].should.exist;
   document.querySelectorAll('a')[0].should.have.attr('href','#descripcion');
 });/*#tests>*/
 /*<options#*/output_ignore_scripts: true
