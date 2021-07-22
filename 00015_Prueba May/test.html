@@ -7,9 +7,9 @@
 
 it("Hay un párrafo dentro del footer que dice Información de contacto", () => {
   let contenidoDelParrafo = document.querySelector('footer p').textContent;
-  let textoDelParrafo = contenidoDelParrafo.split(" ", 3).join();
+  let textoDelParrafo = contenidoDelParrafo.split(" ", 3).join("");
   
-  textoDelParrafo.should.eql("Información de contacto:");
+  textoDelParrafo.should.eql("Informacióndecontacto:");
 });
 
 it("Hay un link con el mail dentro del footer", () => {
