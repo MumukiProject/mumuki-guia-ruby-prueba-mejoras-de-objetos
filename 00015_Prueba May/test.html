@@ -6,7 +6,10 @@
 //Ver como testear que contenga el texto
 
 it("Hay un párrafo dentro del footer que dice Información de contacto", () => {
-  document.querySelector('footer p').should.have.trimmed.text("Información de contacto:");
+  let contenidoDelParrafo = document.querySelector('footer p').textContent;
+  let textoDelParrafo = contenidoDelParrafo.split(" ", 3);
+  
+  textoDelParrafo.should.have.trimmed.text("Información de contacto:");
 });
 
 it("Hay un link con el mail dentro del footer", () => {
