@@ -1,6 +1,6 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("El iframe tiene un atributo src con el link correspondiente", () => {
-  document.querySelector('iframe').should.have.attr('src', "https://www.youtube.com/embed/dnfw9e0Mo2w");
+/*<tests#*/it("El primer li tiene un atributo href='#descripcion'", () => {
+  document.querySelectorAll('a')[0].should.have.attr('href','#descripcion');
 });/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
