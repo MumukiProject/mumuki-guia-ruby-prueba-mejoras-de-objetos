@@ -78,7 +78,6 @@ Algunos lenguajes sirven para cualquier tipo de problema (lenguajes de propósit
 * JavaScript es de propósito general y se puede usar en una gran variedad de contextos;
 * SQL es un lenguaje que sólo sirve para expresar soluciones a problemas de manejo de información en una base de datos.
 
-
 <h3 id="computadora">Computadora</h3>
 
 Una computadora es cualquier máquina capaz de almacenar y procesar información para ayudarnos a resolver problemas. Si bien solemos asociar el término al clásico aparato con una pantalla y un teclado, los teléfonos inteligentes (smartphones), televisores inteligentes (smart TV) y tablets también son computadoras que cumplen funciones más específicas.
