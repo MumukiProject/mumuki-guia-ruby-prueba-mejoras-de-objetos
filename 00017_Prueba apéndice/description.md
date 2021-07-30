@@ -72,7 +72,7 @@ Algunos lenguajes sirven para cualquier tipo de problema (lenguajes de propósit
 
 Una computadora es cualquier máquina capaz de almacenar y procesar información para ayudarnos a resolver problemas. Si bien solemos asociar el término al clásico aparato con una pantalla y un teclado, los teléfonos inteligentes (smartphones), televisores inteligentes (smart TV) y tablets también son computadoras que cumplen funciones más específicas.
 
-<h3 id="error">Error</h2>
+<h3 id="error">Error</h3>
 
 Equivocarse es una parte importante de aprender a programar, los errores pueden enseñarnos más sobre cómo plasmamos nuestras ideas en los programas y sobre las particularidades del lenguaje elegido. Entre los errores más comunes podemos encontrar:
 
