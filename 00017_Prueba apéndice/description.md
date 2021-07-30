@@ -1,5 +1,16 @@
 <ul>
 
+<li><a title="" href="#conceptos-generales">Conceptos generales</a>
+<ul>
+<li><a title="" href="#programa">Programa</a></li>
+<li><a title="" href="#sintaxis">Sintaxis</a></li>
+<li><a title="" href="#paradigma">Paradigma</a></li>
+<li><a title="" href="#lenguaje-de-programacion">Lenguaje de programación</a></li>
+<li><a title="" href="#computadora">Computadora</a></li>
+<li><a title="" href="#error">Error</a></li>
+</ul>
+</li>
+
 <li><a title="" href="#el-lenguaje-gobstones">El lenguaje Gobstones</a>
 
 <li><a title="" href="#procedimientos-primitivos">Procedimientos primitivos</a>
