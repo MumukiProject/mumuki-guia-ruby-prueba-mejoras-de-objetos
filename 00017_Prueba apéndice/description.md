@@ -63,13 +63,11 @@ Un programa que no cumpla con la sintaxis del lenguaje no va a poder ser “comp
 
 Por otro lado, la semántica es el significado de las instrucciones que creamos respetando la sintaxis del lenguaje, lo que interpreta y puede hacer la computadora al ejecutar nuestro código.
 
-
 <h3 id="paradigma">Paradigma</h3>
 
 Un paradigma de programación es un conjunto de conceptos, estrategias y buenas prácticas que nos brindan un marco para resolver problemas de programación y comunicar su solución a otras personas. 
 
 <h3 id="lenguaje-de-programacion">Lenguaje de programación</h3>
-
 
 Tal como los seres humanos nos comunicamos utilizando distintos lenguajes, para darle instrucciones a una computadora deberemos hacerlo utilizando algún lenguaje de programación. Hay muchos y cada uno tiene sus características, reglas sintácticas, convenciones y aplicaciones. Si bien cuando programamos podemos encontrar palabras en inglés u otros idiomas, los lenguajes de programación siguen reglas totalmente diferentes de las de aquellos. 
 
