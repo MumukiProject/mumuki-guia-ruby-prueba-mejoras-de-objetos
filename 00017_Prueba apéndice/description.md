@@ -92,6 +92,7 @@ Equivocarse es una parte importante de aprender a programar, los errores pueden 
 * no resolver el problema para el cual estamos creando nuestro programa;
 * realizar operaciones que no están permitidas.
 
+
 <h2 id="el-lenguaje-gobstones">El lenguaje Gobstones</h2>
 
 Gobstones es un lenguaje gráfico desarrollado por docentes e investigadores de la Universidad Nacional de Quilmes, diseñado para la enseñanza de ideas básicas de programación. 
