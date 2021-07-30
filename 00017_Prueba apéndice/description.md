@@ -2,12 +2,12 @@
 
 <li><a title="" href="#conceptos-generales">Conceptos generales</a>
 <ul>
-<li><a title="" href="#programa"><code>Programa</code></a></li>
-<li><a title="" href="#sintaxis"><code>Sintaxis</code></a></li>
-<li><a title="" href="#paradigma"><code>Paradigma</code></a></li>
-<li><a title="" href="#lenguaje-de-programacion"><code>Lenguaje de programación</code></a></li>
-<li><a title="" href="#computadora"><code>Computadora</code></a></li>
-<li><a title="" href="#error"><code>Error</code></a></li>
+<li><a title="" href="#programa">Programa</a></li>
+<li><a title="" href="#sintaxis">Sintaxis</a></li>
+<li><a title="" href="#paradigma">Paradigma</a></li>
+<li><a title="" href="#lenguaje-de-programacion">Lenguaje de programación</a></li>
+<li><a title="" href="#computadora">Computadora</a></li>
+<li><a title="" href="#error">Error</a></li>
 </ul>
 </li>
 
