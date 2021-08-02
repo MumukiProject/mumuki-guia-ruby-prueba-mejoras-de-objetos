@@ -144,13 +144,51 @@ Los lenguajes cuentan con palabras reservadas para fines específicos, eso signi
 
 <h3 id="programas">Programas</h3>
 
+Para crear un programa en Gobstones debemos escribir la palabra `program` en minúsculas y a continuación, entre llaves `{ }`, sus instrucciones. Los programas en Gobstones no llevan nombre. `program` es la palabra reservada de Gobstones para indicar el comienzo de un programa.
+
+```gobstones
+program {
+	Mover(Este)
+	Poner(Azul)
+}
+```
+
 <h3 id="procedimientos">Procedimientos</h3>
 
-<h4>Nombres</h4> 
+Los procedimientos son una herramienta de los lenguajes que nos permiten agrupar dentro de un bloque de código instrucciones que realizan una tarea específica, y darle un nombre. Nos ayudan a crear programas más claros, porque al utilizarlos organizamos mejor los pasos que resuelven un problema, describimos mejor nuestra estrategia y evitamos repetir lógica.
+
+<h4>Nombre</h4> 
+
+Todos los procedimientos llevan un nombre que explica la tarea que realiza. Es importante que sea un nombre _expresivo_, es decir, que deje claro lo que hace. De esa forma, cuando leemos su nombre podemos entender su objetivo a simple vista, sin necesidad de profundizar en cómo está hecho. 
 
 <h4>Subtareas</h4> 
 
+Los procedimientos son una herramienta muy útil para organizar la resolución de un problema. Identificar y separar las partes que componen un problema nos permite resolver las pequeñas tareas que lo conforman y, al reunirlas, poder solucionarlo. Al utilizar procedimientos reconocemos esas tareas, les ponemos nombre y las resolvemos definiendo un nuevo procedimiento. De esta forma tenemos el procedimiento creado y a disposición para invocarlo todas las veces que sean necesarias. 
+
 <h4>Definición e invocaciones</h4> 
+
+La definición de un procedimiento es la porción de código que desarrolla la tarea que resuelve. Esta definición no implica su uso, solo su existencia. Para definir un procedimiento debemos utilizar la palabra reservada `procedure` luego el nombre elegido en con la primera letra de cada palabra en mayúsculas (_DeEstaForma_) seguido por paréntesis `()`. Por último, entre llaves, las acciones y comandos que lo conforman. Por ejemplo:
+
+```gobstones
+procedure PonerUnaBolitaDeCadaColor(){
+	Poner(Rojo)
+	Poner(Verde)
+	Poner(Azul)
+	Poner(Negro)
+}
+```
+
+En otras palabras, al definir un procedimiento estamos indicando las instrucciones precisas que ejecutará al ser invocado.
+
+Invocar un procedimiento es utilizarlo. Para hacerlo hay que escribir su nombre y los paréntesis dentro de un programa, función u otro procedimiento. Al ejecutar un programa que incluya la invocación a uno o varios procedimientos la computadora podrá ponerlos en acción. Por ejemplo, si quisieramos invocar el procedimiento `PonerUnaBolitaDeCadaColor` dentro de un programa deberíamos escribir:
+
+```gobstones
+program {
+	PonerUnaBolitaDeCadaColor()
+}
+```
+	
+El procedimiento no tendrá ningún efecto hasta que no lo invoquemos en al menos un lugar.
 
 <h3 id="repeticion-simple">Repetición simple</h3>
 
@@ -160,7 +198,41 @@ Los lenguajes cuentan con palabras reservadas para fines específicos, eso signi
 
 <h3 id="alternativa-condicional">Alternativa condicional</h3>
 
+Cuando un problema presenta escenarios que pueden variar necesitamos algún tipo de herramienta para evaluar el contexto y tomar decisiones. La alternativa condicional se ocupa precisamente de esto. ¿Cómo lo hace? Primero evalúa el valor de verdad de una expresión booleana, que actúa de condición y según se cumpla o no, realiza una acción determinada. Por ejemplo, tenemos que decidir qué hacer según la cantidad de bolitas de una celda, si un número es mayor que otro o si llegué a un extremo del tablero.
+
+La alternativa condicional se compone de una estructura de control que utiliza la palabra `if` (que significa “si” en inglés). Se escribe `if`, la condición y entre llaves las acciones que se deben realizar si la condición se cumple. Si la condición no es verdadera no se van a ejecutar las instrucciones entre las llaves, sino que el programa seguirá su curso normal con los comandos fuera de éstas.
+
+```gobstones
+program {
+    if(hayBolitas(Azul)) {
+        Sacar(Azul)
+    } // en este caso si hay al menos una bolita azul va a sacar una.
+}
+````
+
+Si queremos hacer una acción específica cuando no se cumple la condición del `if` (y solo en ese caso), podemos utilizar la sentencia `else` (si no en inglés).
+
+```gobstones
+program {
+    if(hayBolitas(Azul)) {
+        Sacar(Azul)
+    } else {
+        Poner(Azul)
+    } // en este caso si hay al menos una bolita azul va a sacar una. Si no hay ninguna bolita azul va a poner una.
+}
+```
+
 <h3 id="funciones">Funciones</h3>
+
+Al igual que los procedimientos, las funciones nos permiten dividir el problema en subtareas para evitar repeticiones y hacer más fácil de entender la solución. La diferencia entre ambos es que las funciones no describen acciones sino que encapsulan expresiones, realizan algún tipo de procesamiento con información de su contexto y devuelven un resultado, sin ningún efecto real sobre el tablero. Lo que retorne la función debería ir entre paréntesis a continuación de la palabra `return`. 
+
+La definición e invocación de funciones también debe tener un nombre claro y descriptivo que indique con precisión qué hace y cuál será el resultado que nos retornará esa función. A diferencia de los procedimientos, las funciones se definen utilizando la palabra `function` y su nombre con la primera letra de cada palabra en mayúsculas a excepción de la primera (_deEstaForma_). Por ejemplo:
+
+```
+function nroBolitasTotal() {
+  return (nroBolitas(Azul) + nroBolitas(Negro) + nroBolitas(Rojo) + nroBolitas(Verde))
+}
+```
 
 <h2 id="procedimientos-primitivos">Procedimientos primitivos</h2>
 
