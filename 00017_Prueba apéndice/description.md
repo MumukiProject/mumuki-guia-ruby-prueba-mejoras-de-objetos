@@ -228,7 +228,7 @@ Al igual que los procedimientos, las funciones nos permiten dividir el problema 
 
 La definición e invocación de funciones también debe tener un nombre claro y descriptivo que indique con precisión qué hace y cuál será el resultado que nos retornará esa función. A diferencia de los procedimientos, las funciones se definen utilizando la palabra `function` y su nombre con la primera letra de cada palabra en mayúsculas a excepción de la primera (_deEstaForma_). Por ejemplo:
 
-```
+```gobstones
 function nroBolitasTotal() {
   return (nroBolitas(Azul) + nroBolitas(Negro) + nroBolitas(Rojo) + nroBolitas(Verde))
 }
