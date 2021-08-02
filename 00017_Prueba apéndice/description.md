@@ -210,7 +210,7 @@ Tenemos que prestar atención al orden en el que damos las instrucciones que re�
 
 Por ejemplo, queremos colocar una bolita azul en cada celda de este tablero:
 
-TODO
+<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/tablero-inicial-caso-borde.png" width="165"/>
 
 Si intentamos repetir la acción de `Poner(Azul)` y `Mover(Este)` cuatro veces, en el último paso vamos a estar fuera de los márgenes del tablero y las instrucciones no serán válidas. Si, en cambio, repetimos esas acciones tres veces no colocaremos una bolita azul en la última celda.
 La solución es hacer tres repeticiones y por fuera de su estructura nos encargamos de poner la bolita en la última celda:
@@ -227,7 +227,7 @@ program{
 
 De esa forma el tablero obtenido será este:
 
-TODO
+<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/tablero-final-caso-borde.png" width="165"/>
 
 <h3 id="parametros-y-argumentos">Parámetros y argumentos</h3>
 
@@ -287,7 +287,7 @@ La definición e invocación de funciones también debe tener un nombre claro y 
 
 ```gobstones
 function nroBolitasTotal() {
-  return (nroBolitas(Azul) + nroBolitas(Negro) + nroBolitas(Rojo) + nroBolitas(Verde))
+    return (nroBolitas(Azul) + nroBolitas(Negro) + nroBolitas(Rojo) + nroBolitas(Verde))
 }
 ```
 
@@ -300,7 +300,7 @@ Pone una bolita del color indicado en la casilla actual. Ejemplo:
 
 ```gobstones
 program {
-  Poner(Rojo) // pone una bolita roja en la casilla actual.
+    Poner(Rojo) // pone una bolita roja en la casilla actual.
 }
 ```
 
@@ -311,7 +311,7 @@ Saca una bolita del color indicado de la casilla actual. Ejemplo:
 
 ```gobstones
 program {
-  Sacar(Negro) // saca una bolita negra de las que hay en la casilla actual.
+    Sacar(Negro) // saca una bolita negra de las que hay en la casilla actual.
 }
 ```
 
@@ -322,7 +322,7 @@ Mueve el cabezal indicador de la casilla actual un paso hacia la dirección indi
 
 ```gobstones
 program {
-  Mover(Este) // mueve el cabezal una vez hacia el Este.
+    Mover(Este) // mueve el cabezal una vez hacia el Este.
 }
 ```
 
@@ -333,7 +333,7 @@ Lleva el cabezal todo lo que se puede hacia la dirección indicada. Ejemplo:
 
 ```gobstones
 program {
-  IrAlBorde(Norte) // mueve el cabezal de la celda actual a la última celda en la dirección Norte.
+    IrAlBorde(Norte) // mueve el cabezal de la celda actual a la última celda en la dirección Norte.
 }
 ```
 
@@ -344,7 +344,7 @@ Saca todas las bolitas del tablero, dejando el cabezal en la posición en la que
 
 ```gobstones
 program {
-  VaciarTablero() // En un tablero con alguna o muchas bolitas, las saca todas.
+    VaciarTablero() // En un tablero con alguna o muchas bolitas, las saca todas.
 }
 ```
 
@@ -355,8 +355,7 @@ program {
 
 Retorna un número: la cantidad de bolitas del color indicado que hay en la casilla actual. Ejemplo, asumiendo la siguiende celda actual: 
 
-![](https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/sample.png)
-TODO
+<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/casillero-con-bolitas.png" width="165"/>
 
 ```gobstones
 nroBolitas(Rojo) // retorna 4
@@ -406,8 +405,7 @@ previo(Sur) // retorna Este
 
 Retorna un booleano: es verdadero cuando en la casilla actual hay al menos una bolita del valor indicado. Ejemplo, asumiendo la siguiende celda actual: 
 
-![](https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/sample.png)
-TODO
+<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/casillero-con-bolitas.png" width="165"/>
 
 ```gobstones
 hayBolitas(Rojo) // retorna verdadero
@@ -419,7 +417,7 @@ hayBolitas(Verde) // retorna falso
 
 Retorna un booleano: es verdadero cuando el cabezal puede moverse en esa dirección (o sea, no está en el borde). Por ejemplo, estando el cabezal en la esquina de abajo a la izquierda: 
 
-TODO
+<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/casillero-puede-mover.png" width="165" />
 
 ```gobstones
 puedeMover(Norte) // retorna verdadero
