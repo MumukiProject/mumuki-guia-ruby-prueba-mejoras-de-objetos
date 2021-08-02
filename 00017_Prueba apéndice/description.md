@@ -23,6 +23,17 @@
 </ul>
 </li>
 
+<li><a title="" href="#fundamentos-de-programacion">Fundamentos de programación</a>
+<ul>
+<li><a title="" href="#programas">Programas</a></li>
+<li><a title="" href="#procedimientos">Procedimientos</a></li>
+<li><a title="" href="#repeticion-simple">Repetición simple</a></li>
+<li><a title="" href="#parametros-y-argumentos">Parámetros y argumentos</a></li>
+<li><a title="" href="#alternativa-condicional">Alternativa condicional</a></li>
+<li><a title="" href="#funciones">Funciones</a></li>
+</ul>
+</li>
+
 <li><a title="" href="#procedimientos-primitivos">Procedimientos primitivos</a>
 <ul>
 <li><a title="" href="#ponercolor"><code>Poner(color)</code></a></li>
@@ -129,6 +140,20 @@ En Gobstones nos toparemos frecuentemente con el ¡Boom! Esta explosión es una 
 
 Los lenguajes cuentan con palabras reservadas para fines específicos, eso significa que no podemos usarlas en cualquier situación. Algunos ejemplos de Gobstones son `program`, `procedure` y `function`.
 
+<h2 id="fundamentos-de-programacion">Fundamentos de programación</h2>
+
+<h3 id="programas">Programas</h3>
+
+<h3 id="procedimientos">Procedimientos</h3>
+
+<h3 id="repeticion-simple">Repetición simple</h3>
+
+<h3 id="parametros-y-argumentos">Parámetros y argumentos</h3>
+
+<h3 id="alternativa-condicional">Alternativa condicional</h3>
+
+<h3 id="funciones">Funciones</h3>
+
 <h2 id="procedimientos-primitivos">Procedimientos primitivos</h2>
 
 <a id="ponercolor"></a>
@@ -191,73 +216,73 @@ program {
 <a id="nrobolitascolor"></a>
 ### `nroBolitas(color)`
 
-Denota un número: la cantidad de bolitas del color indicado que hay en la casilla actual. Ejemplo, asumiendo la siguiende celda actual: 
+Retorna un número: la cantidad de bolitas del color indicado que hay en la casilla actual. Ejemplo, asumiendo la siguiende celda actual: 
 
 ![](https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/sample.png)
 
 ```gobstones
-nroBolitas(Rojo) // denota 4
+nroBolitas(Rojo) // retorna 4
 ```
 
 <a id="opuestodireccion"></a>
 ### `opuesto(direccion)`
 
-Denota una dirección: la dirección opuesta a la provista. Ejemplo:
+Retorna una dirección: la dirección opuesta a la provista. Ejemplo:
 
 ```gobstones
-opuesto(Norte) // denota Sur
+opuesto(Norte) // retorna Sur
 ```
 
 <a id="opuestonumero"></a>
 ### `opuesto(numero)`
 
-Denota un número: el original, negado. Ejemplo: 
+Retorna un número: el original, negado. Ejemplo: 
 
-```gobstenes
-opuesto(59) // denota -59
+```gobstones
+opuesto(59) // Retorna -59
 ```
 
 <a id="siguientedireccion"></a>
 ### `siguiente(direccion)`
 
-Denota una dirección: la siguiente a la provista, es decir, la próxima en sentido horario. Ejemplo: 
+Retorna una dirección: la siguiente a la recibida como argumento, es decir, la próxima en sentido horario. Ejemplo: 
 
 ```gobstones
-siguiente(Oeste) // denota Norte
-siguiente(Norte) // denota Este
-siguiente(Este)  // denota Sur
-siguiente(Sur)   // denota Oeste
+siguiente(Oeste) // retorna Norte
+siguiente(Norte) // retorna Este
+siguiente(Este)  // retorna Sur
+siguiente(Sur)   // retorna Oeste
 ```
 
 <a id="previodireccion"></a>
 ### `previo(direccion)`
 
-Denota una dirección: la anterior a la provista, es decir, la próxima en sentido anti horario. Ejemplo: 
+Retorna una dirección: la anterior a la recibida como argumento, es decir, la próxima en sentido anti horario. Ejemplo: 
 
 ```gobstones
-previo(Sur) // denota Este
+previo(Sur) // retorna Este
 ```
 
 <a id="haybolitascolor"></a>
 ### `hayBolitas(color)`
 
-Denota un booleano: es cierto cuando en la casilla actual hay al menos una bolita del valor indicado. Ejemplo, asumiendo la siguiende celda actual: 
+Retorna un booleano: es verdadero cuando en la casilla actual hay al menos una bolita del valor indicado. Ejemplo, asumiendo la siguiende celda actual: 
 
 ![](https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/sample.png)
 
 ```gobstones
-hayBolitas(Rojo) // denota cierto
-hayBolitas(Verde) // denota falso
+hayBolitas(Rojo) // retorna verdadero
+hayBolitas(Verde) // retorna falso
 ```
 
 <a id="puedemoverdireccion"></a>
 ### `puedeMover(direccion)`
 
-Denota un booleano: si el cabezal puede moverse en esa dirección (o sea, no está en el borde). Por ejemplo, estando el cabezal en la esquina de abajo a la izquierda: 
+Retorna un booleano: es verdadero cuando el cabezal puede moverse en esa dirección (o sea, no está en el borde). Por ejemplo, estando el cabezal en la esquina de abajo a la izquierda: 
 
 ```gobstones
-puedeMover(Norte) // denota cierto
-puedeMover(Oeste) // denota falso
+puedeMover(Norte) // retorna verdadero
+puedeMover(Oeste) // retorna falso
 ```
 
 <h2 id="expresiones-logicas-y-matematicas">Expresiones lógicas y matemáticas</h2>
