@@ -13,6 +13,16 @@
 
 <li><a title="" href="#el-lenguaje-gobstones">El lenguaje Gobstones</a>
 
+<li><a title="" href="#el-entorno-de-gobstones">El entorno de Gobstones</a>
+<ul>
+<li><a title="" href="#tablero">Tablero</a></li>
+<li><a title="" href="#bolitas">Bolitas</a></li>
+<li><a title="" href="#cabezal">Cabezal</a></li>
+<li><a title="" href="#boom">Boom</a></li>
+<li><a title="" href="#palabras-reservadas"></a>Palabras reservadas</li>
+</ul>
+</li>
+
 <li><a title="" href="#procedimientos-primitivos">Procedimientos primitivos</a>
 <ul>
 <li><a title="" href="#ponercolor"><code>Poner(color)</code></a></li>
@@ -74,13 +84,13 @@ Tal como los seres humanos nos comunicamos utilizando distintos lenguajes, para 
 
 Algunos lenguajes sirven para cualquier tipo de problema (lenguajes de propósito general) y otros sirven para hacer cosas específicas. Por ejemplo:
 
-* Gobstones es un lenguaje destinado únicamente a enseñar los conceptos fundamentales de la programación;
-* JavaScript es de propósito general y se puede usar en una gran variedad de contextos;
-* SQL es un lenguaje que sólo sirve para expresar soluciones a problemas de manejo de información en una base de datos.
+* _Gobstones_ es un lenguaje destinado únicamente a enseñar los conceptos fundamentales de la programación;
+* _JavaScript_ es de propósito general y se puede usar en una gran variedad de contextos;
+* _SQL_ es un lenguaje que sólo sirve para expresar soluciones a problemas de manejo de información en una base de datos.
 
 <h3 id="computadora">Computadora</h3>
 
-Una computadora es cualquier máquina capaz de almacenar y procesar información para ayudarnos a resolver problemas. Si bien solemos asociar el término al clásico aparato con una pantalla y un teclado, los teléfonos inteligentes (smartphones), televisores inteligentes (smart TV) y tablets también son computadoras que cumplen funciones más específicas.
+Una computadora es cualquier máquina capaz de almacenar y procesar información para ayudarnos a resolver problemas. Si bien solemos asociar el término al clásico aparato con una pantalla y un teclado, los teléfonos inteligentes (_smartphones_), televisores inteligentes (_smart TV_) y _tablets_ también son computadoras que cumplen funciones más específicas.
 
 <h3 id="error">Error</h3>
 
@@ -97,6 +107,27 @@ Gobstones es un lenguaje gráfico desarrollado por docentes e investigadores de 
 
 Su representación visual facilita la ejercitación de la abstracción y la contextualización. Por eso es el lenguaje que elegimos para presentar los fundamentos de la programación.
 
+<h2 id="el-entorno-de-gobstones">El entorno de Gobstones</h2>
+
+<h3 id="tablero">Tablero</h3>
+
+El tablero es una cuadrícula compuesta por celdas. Las distintas tareas que hacen nuestros programas con las bolitas y el tablero nos permiten representar y resolver problemas muy variados. Podemos ver su estado antes y después de ejecutar un programa.
+
+<h3 id="bolitas">Bolitas</h3>
+
+Cada celda del tablero puede contener un número ilimitado de bolitas que pueden ser de cuatro colores diferentes: `Negro`, `Verde`, `Rojo` y `Azul`. Las herramientas que nos provee Gobstones para manipular las bolitas nos permiten lograr diferentes configuraciones del tablero para modelar situaciones y resolver problemas.
+
+<h3 id="cabezal">Cabezal</h3>
+
+El cabezal es un punto de referencia que se ubica en una celda determinada (la celda actual), y recibe y ejecuta las instrucciones que operan sobre el tablero y las bolitas, como ponerlas, sacarlas, contar cuántas hay y moverse desde su celda actual hacia otras del tablero.
+
+<h3 id="boom">Boom</h3>
+
+En Gobstones nos toparemos frecuentemente con el ¡Boom! Esta explosión es una representación gráfica para avisarnos que le estamos pidiendo a la computadora que haga algo que no puede resolver, por ejemplo cuando intentamos hacer movimientos fuera del tablero o sacar bolitas de una celda en la que no las hay.
+
+<h3 id="palabras-reservadas">Palabras reservadas</h3>
+
+Los lenguajes cuentan con palabras reservadas para fines específicos, eso significa que no podemos usarlas en cualquier situación. Algunos ejemplos de Gobstones son `program`, `procedure` y `function`.
 
 <h2 id="procedimientos-primitivos">Procedimientos primitivos</h2>
 
