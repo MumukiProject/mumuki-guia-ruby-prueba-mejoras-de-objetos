@@ -187,14 +187,71 @@ program {
 	PonerUnaBolitaDeCadaColor()
 }
 ```
-	
+
 El procedimiento no tendrá ningún efecto hasta que no lo invoquemos en al menos un lugar.
 
 <h3 id="repeticion-simple">Repetición simple</h3>
 
-<h4>Caso borde</h4> 
+La repetición es una herramienta de programación que nos permite automatizar la repetición de alguna tarea indicando el número de veces consecutivas que deseamos hacerla.
+
+La palabra reservada para la repetición simple es `repeat`, y va seguida por el número de repeticiones entre paréntesis y los comandos a repetir entre llaves. Por ejemplo:
+
+```gobstones
+program{ 
+    repeat(5){
+        Poner(Azul)
+    }    
+}
+```
+
+<h4>Caso borde</h4>
+
+Tenemos que prestar atención al orden en el que damos las instrucciones que reúne la repetición para garantizar que al comienzo y al final (o en los “bordes”) se comporte como esperamos. Si no consideramos los casos bordes en una repetición en la que combinamos acciones y movimientos en el tablero es muy probable que pasemos celdas sin completar la acción deseada o nos salgamos de los márgenes del tablero. Una buena estrategia para evitarlo es considerar el último caso por fuera de la repetición.
+
+Por ejemplo, queremos colocar una bolita azul en cada celda de este tablero:
+
+TODO
+
+Si intentamos repetir la acción de `Poner(Azul)` y `Mover(Este)` cuatro veces, en el último paso vamos a estar fuera de los márgenes del tablero y las instrucciones no serán válidas. Si, en cambio, repetimos esas acciones tres veces no colocaremos una bolita azul en la última celda.
+La solución es hacer tres repeticiones y por fuera de su estructura nos encargamos de poner la bolita en la última celda:
+
+```gobstones
+program{ 
+    repeat(3){
+        Poner(Azul)
+        Mover(Este)
+    }  
+    Poner(Azul)  
+}
+```
+
+De esa forma el tablero obtenido será este:
+
+TODO
 
 <h3 id="parametros-y-argumentos">Parámetros y argumentos</h3>
+
+Cuando queremos generalizar el comportamiento de un procedimiento para que se adecúe a distintas situaciones de uso similares, podemos utilizar parámetros.
+Los parámetros no tienen un valor determinado en el momento de la definición del procedimiento, pero pueden tomar potencialmente cualquier valor (siempre que tenga sentido). El parámetro es un "agujero" que debemos completar con la información particular que necesitemos al invocar el procedimiento.
+
+Al definir el procedimiento incluiremos entre paréntesis el parámetro (o parámetros) con un nombre descriptivo en minúsculas. Por ejemplo:
+
+```gobstones
+// Este procedimiento nos permitirá movernos dos celdas en cualquier dirección.
+procedure Mover2PasosHaciaEl(dirección) {
+    Mover(dirección)
+    Mover(dirección)
+}
+```
+
+Al invocar el procedimiento tendremos que pasarle un argumento en la misma posición que el parámetro correspondiente. Cada argumento es el valor específico que reemplazará al parámetro que le corresponda en cada una de sus apariciones dentro de la definición de la función o procedimiento invocado.
+
+```gobstones
+// Al invocar el procedimiento podemos elegir hacia qué dirección queremos movernos. Por ejemplo, si quisiéramos un programa que nos permita movernos dos celdas al Oeste deberíamos hacer:
+program {
+    Mover2PasosHaciaEl(Oeste)
+}
+```
 
 <h3 id="alternativa-condicional">Alternativa condicional</h3>
 
@@ -208,7 +265,7 @@ program {
         Sacar(Azul)
     } // en este caso si hay al menos una bolita azul va a sacar una.
 }
-````
+```
 
 Si queremos hacer una acción específica cuando no se cumple la condición del `if` (y solo en ese caso), podemos utilizar la sentencia `else` (si no en inglés).
 
@@ -299,6 +356,7 @@ program {
 Retorna un número: la cantidad de bolitas del color indicado que hay en la casilla actual. Ejemplo, asumiendo la siguiende celda actual: 
 
 ![](https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/sample.png)
+TODO
 
 ```gobstones
 nroBolitas(Rojo) // retorna 4
@@ -349,6 +407,7 @@ previo(Sur) // retorna Este
 Retorna un booleano: es verdadero cuando en la casilla actual hay al menos una bolita del valor indicado. Ejemplo, asumiendo la siguiende celda actual: 
 
 ![](https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/sample.png)
+TODO
 
 ```gobstones
 hayBolitas(Rojo) // retorna verdadero
@@ -359,6 +418,8 @@ hayBolitas(Verde) // retorna falso
 ### `puedeMover(direccion)`
 
 Retorna un booleano: es verdadero cuando el cabezal puede moverse en esa dirección (o sea, no está en el borde). Por ejemplo, estando el cabezal en la esquina de abajo a la izquierda: 
+
+TODO
 
 ```gobstones
 puedeMover(Norte) // retorna verdadero
