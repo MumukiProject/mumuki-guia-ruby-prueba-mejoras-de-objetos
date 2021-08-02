@@ -19,7 +19,7 @@
 <li><a title="" href="#bolitas">Bolitas</a></li>
 <li><a title="" href="#cabezal">Cabezal</a></li>
 <li><a title="" href="#boom">Boom</a></li>
-<li><a title="" href="#palabras-reservadas"></a>Palabras reservadas</li>
+<li><a title="" href="#palabras-reservadas">Palabras reservadas</a></li>
 </ul>
 </li>
 
