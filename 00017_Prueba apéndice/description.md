@@ -210,7 +210,7 @@ Tenemos que prestar atención al orden en el que damos las instrucciones que re�
 
 Por ejemplo, queremos colocar una bolita azul en cada celda de este tablero:
 
-<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/tablero-inicial-caso-borde.png" width="165"/>
+<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/tablero-inicial-caso-borde.png" width="300"/>
 
 Si intentamos repetir la acción de `Poner(Azul)` y `Mover(Este)` cuatro veces, en el último paso vamos a estar fuera de los márgenes del tablero y las instrucciones no serán válidas. Si, en cambio, repetimos esas acciones tres veces no colocaremos una bolita azul en la última celda.
 La solución es hacer tres repeticiones y por fuera de su estructura nos encargamos de poner la bolita en la última celda:
@@ -227,7 +227,7 @@ program{
 
 De esa forma el tablero obtenido será este:
 
-<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/tablero-final-caso-borde.png" width="165"/>
+<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/tablero-final-caso-borde.png" width="300"/>
 
 <h3 id="parametros-y-argumentos">Parámetros y argumentos</h3>
 
@@ -355,7 +355,7 @@ program {
 
 Retorna un número: la cantidad de bolitas del color indicado que hay en la casilla actual. Ejemplo, asumiendo la siguiende celda actual: 
 
-<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/casillero-con-bolitas.png" width="165"/>
+<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/casillero-con-bolitas.png" width="100"/>
 
 ```gobstones
 nroBolitas(Rojo) // retorna 4
@@ -405,7 +405,7 @@ previo(Sur) // retorna Este
 
 Retorna un booleano: es verdadero cuando en la casilla actual hay al menos una bolita del valor indicado. Ejemplo, asumiendo la siguiende celda actual: 
 
-<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/casillero-con-bolitas.png" width="165"/>
+<img src="https://raw.githubusercontent.com/MumukiProject/mumuki-apendice-fundamentos-gobstones/master/casillero-con-bolitas.png" width="100"/>
 
 ```gobstones
 hayBolitas(Rojo) // retorna verdadero
