@@ -146,7 +146,15 @@ Los lenguajes cuentan con palabras reservadas para fines específicos, eso signi
 
 <h3 id="procedimientos">Procedimientos</h3>
 
+<h4>Caso borde</h4> 
+
+<h4>Subtareas</h4> 
+
+<h4>Definición e invocaciones</h4> 
+
 <h3 id="repeticion-simple">Repetición simple</h3>
+
+<h4>Caso borde</h4> 
 
 <h3 id="parametros-y-argumentos">Parámetros y argumentos</h3>
 
