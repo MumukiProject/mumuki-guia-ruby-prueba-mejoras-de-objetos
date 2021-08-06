@@ -2,10 +2,10 @@
 locale: es
 tags: []
 layout: input_right
-editor: multiple_files
+editor: code
 type: problem
 extra_visible: false
-language: html
+language: javascript
 teacher_info: ''
 manual_evaluation: false
 choices: []
