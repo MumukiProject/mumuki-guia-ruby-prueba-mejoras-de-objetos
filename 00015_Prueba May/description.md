@@ -1,5 +1,5 @@
 Ivi está diseñando una página web, como quiere que sea accesible se está centrando en el contraste de la misma :star_struck:.
-Para lograrlo, nos pidió que definamos la función `tieneContraste` que recibe como argumentos el tono de la letra y el tono del fondo de la página y retorne si la página es tiene contraste.
+Para lograrlo, nos pidió que definamos la función `tieneContraste` que recibe como argumentos el tono de la letra y el tono del fondo de la página y retorne si la página tiene contraste.
 
 Por ejemplo:
 
