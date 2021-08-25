@@ -1,5 +1,5 @@
-describe("Descripción del grupo", function() {
-  it("Descripción del ejemplo", function() {
-  document.getElementsByTagName("p").length.should.eql(10);
-  })
+it(`tieneContraste("claro","claro" retorna false`, function() {
+  let resultado = tieneContraste("claro", "oscuro")
+  assert.eql(resultado)
 })
+
