@@ -1,5 +1,14 @@
-it(`tieneContraste("claro","oscuro") retorna true`, function() {
-  let resultado = tieneContraste("claro","oscuro")
+it(`tieneContraste("blanco","negro") retorna true`, function() {
+  let resultado = tieneContraste("blanco","negro")
   assert.equal(resultado, true)
 })
 
+it(`tieneContraste("beige","rosa") retorna false`, function() {
+  let resultado = tieneContraste("beige","rosa")
+  assert.equal(resultado, false)
+})
+
+it(`tieneContraste("rojo","azul") retorna false`, function() {
+  let resultado = tieneContraste("rojo","azul")
+  assert.equal(resultado, false)
+})
