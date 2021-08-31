@@ -8,7 +8,7 @@ Para empezar ya contamos con la función `esTonoClaro` que toma un color por par
 false
 
 ム esTonoClaro('blanco')
-false
+true
 ```
 
 > ¡Ahora te toca a vos! Definí la función `tieneContraste`.
