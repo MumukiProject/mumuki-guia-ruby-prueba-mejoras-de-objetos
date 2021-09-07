@@ -1,1 +1,0 @@
-Para que la página tenga contraste tiene que tener el fondo claro y la letra oscura o bien tener el fondo oscuro y la letra clara.:relieved:
