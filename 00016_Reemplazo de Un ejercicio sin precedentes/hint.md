@@ -1,1 +1,1 @@
-Recordá que `té` lleva tilde. :wink:
+Recordá que `té` lleva tilde. :face_with_monocle:
