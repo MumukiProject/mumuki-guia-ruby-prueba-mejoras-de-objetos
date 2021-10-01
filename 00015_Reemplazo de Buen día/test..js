@@ -1,6 +1,6 @@
 it(`tieneContraste("blanco","negro") retorna true`, function() {
   let resultado = tieneContraste("blanco","negro")
-  assert.equal(resultado, true)
+  assert(resultado)
 })
 
 it(`tieneContraste("beige","rosa") retorna false`, function() {
