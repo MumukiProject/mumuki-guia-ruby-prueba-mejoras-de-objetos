@@ -9,3 +9,7 @@ it(`tieneContraste("beige","rosa") retorna false`, function() {
 it(`tieneContraste("rojo","azul") retorna false`, function() { 
   assert(!tieneContraste("rojo","azul"))
 })
+
+it(`tieneContraste("negro","amarillo") retorna true`, function() {
+  assert(tieneContraste("negro","amarillo"))
+})
