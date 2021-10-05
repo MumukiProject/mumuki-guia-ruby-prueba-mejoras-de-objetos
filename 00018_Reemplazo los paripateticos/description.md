@@ -4,14 +4,14 @@ Podemos encadenar varias de ellas mediante el operador `&&` y alcanza con que s�
 
 Por ejemplo, si cuento con la función:
 
-_
+
 ```javascript
 function esCantanteProlifico (cdsEditados, recitalesRealizados, graboAlgunDVD) {
   return cdsEditados >= 10 && recitalesRealizados > 250 && graboAlgunDVD;
 }
 ```
 
-y tenemos un cantante que no grabó un DVD, entonces no se lo considera [prolífico](http://dle.rae.es/?id=UKzI2xC), incluso aunque haya editado más de 10 CDs y dado más de 250 recitales._
+y tenemos un cantante que no grabó un DVD, entonces no se lo considera [prolífico](http://dle.rae.es/?id=UKzI2xC), incluso aunque haya editado más de 10 CDs y dado más de 250 recitales.
 
 TODO ESO HAY QUE VERLO PARA SER CAMBIADO
 
