@@ -14,6 +14,6 @@ it("Una persona que se desempena en filosofia es de grecia y camina 3kms al dia 
   assert.equal(esPeripatetica("atleta", "griego", 10), false);
 })
 
-it("Una persona que es de argentina y camina 1km al día no es peripatética", function() {
-  assert.equal(esPeripatetica("profesor", "colombiano", 1), false);
+it("Una persona que se desempeña en la docencia es de colombia y camina 1km al día no es peripatética", function() {
+  assert.equal(esPeripatetica("docente", "colombia", 1), false);
 })
