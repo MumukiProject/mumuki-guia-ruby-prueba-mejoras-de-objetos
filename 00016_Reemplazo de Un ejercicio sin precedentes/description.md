@@ -1,24 +1,11 @@
 Tenemos el siguiente laberinto:
 
 /*<hidden-for-student@*/
-// laberinto1 :=
-<gs-board>
-  GBB/1.0
-  size 3 3
-  cell 0 0 $COLOR 1
-  cell 1 1 $COLOR 1
-  cell 2 2 $COLOR 1
-  head 2 2
-<gs-board>
+// Ver https://github.com/MumukiProject/mumuki-apendice-imperativa-javascript/blob/master/biblioteca.js
 
-laberinto2 := <gs-board>
-  GBB/1.0
-  size 3 3
-  cell 0 0 $COLOR 1
-  cell 1 1 $COLOR 1
-  cell 2 2 $COLOR 1
-  head 2 2
-<gs-board>
+// =============
+// Lección 1 y 2
+// =============
 /*@hidden-for-student>*/
 
 $laberinto1
