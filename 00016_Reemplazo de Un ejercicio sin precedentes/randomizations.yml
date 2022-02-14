@@ -4,3 +4,8 @@ COLOR: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   value:
   - Verde
   - Rojo
+laberinto: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  type: one_of
+  value:
+  - laberinto1
+  - laberinto2
