@@ -1,4 +1,4 @@
-laberinto1 =
+laberinto1 :=
 <gs-board>
   GBB/1.0
   size 3 3
@@ -8,7 +8,7 @@ laberinto1 =
   head 2 2
 <gs-board>
 
-laberinto2 = <gs-board>
+laberinto2 := <gs-board>
   GBB/1.0
   size 3 3
   cell 0 0 $COLOR 1
