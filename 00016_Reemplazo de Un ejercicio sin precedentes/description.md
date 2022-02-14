@@ -1,6 +1,6 @@
 Tenemos el siguiente laberinto:
 
-laberinto1
+$laberinto1
 
 y nos pidieron ayuda para dibujar el camino a la salida.
 
