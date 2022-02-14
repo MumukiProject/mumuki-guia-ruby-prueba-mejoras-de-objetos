@@ -7,5 +7,5 @@ COLOR: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 laberinto: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   type: one_of
   value:
-  - laberinto1
-  - laberinto2
+  - "$laberinto1"
+  - "$laberinto2"
