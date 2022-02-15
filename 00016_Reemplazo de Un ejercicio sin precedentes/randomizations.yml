@@ -4,3 +4,8 @@ COLOR: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   value:
   - Verde
   - Rojo
+NUMERO_BOLITAS: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  type: one_of
+  value:
+  - '1'
+  - '0'
