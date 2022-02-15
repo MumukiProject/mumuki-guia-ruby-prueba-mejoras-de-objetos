@@ -8,6 +8,8 @@ Tenemos el siguiente laberinto:
   cell 0 2 $COLOR $NUMERO_BOLITAS
   cell 1 1 $COLOR $NUMERO_BOLITAS
   cell 1 2 $COLOR $NUMERO_BOLITAS
+  cell 2 0 $COLOR $NUMERO_BOLITAS
+  cell 2 1 $COLOR $NUMERO_BOLITAS
   cell 2 2 $COLOR $NUMERO_BOLITAS
   head 2 2
 <gs-board>
