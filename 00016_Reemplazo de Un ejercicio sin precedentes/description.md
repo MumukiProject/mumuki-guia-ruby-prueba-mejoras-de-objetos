@@ -1,22 +1,7 @@
-Tenemos el siguiente laberinto:
+Ya hicimos toda la lógica relacionada con el agua del termo, pero del mate ni noticias. :unamused:
 
-<gs-board>
-  GBB/1.0
-  size 3 3
-  cell 0 0 $COLOR $NUMERO_BOLITAS
-  cell 0 1 $COLOR $NUMERO_BOLITAS
-  cell 0 2 $COLOR $NUMERO_BOLITAS
-  cell 1 0 $COLOR $NUMERO_BOLITAS
-  cell 1 1 $COLOR $NUMERO_BOLITAS
-  cell 1 2 $COLOR $NUMERO_BOLITAS
-  cell 2 0 $COLOR $NUMERO_BOLITAS
-  cell 2 1 $COLOR $NUMERO_BOLITAS
-  cell 2 2 $COLOR $NUMERO_BOLITAS
-  head 2 2
-<gs-board>
+> Vamos a modificar un poco el programa que teníamos:
 
-$laberinto
-
-y nos pidieron ayuda para dibujar el camino a la salida.
-
-> Dibuja el camino de color `$COLOR` para poder salir del laberinto.
+> 1. Inicializá la variable `aguaDelMate` en 0.
+> 2. Modificá el procedimiento `cebarMate` para que, además de lo que hacía, aumente en 30 mililitros el `aguaDelMate`. 
+> 3. Definí el procedimiento `tomarMate` que deja en 0 el agua del mate. 
