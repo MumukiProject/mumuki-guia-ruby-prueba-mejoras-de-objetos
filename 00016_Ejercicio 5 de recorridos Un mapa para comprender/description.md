@@ -1,4 +1,4 @@
-En el ejercicio anterior hicimos un mapeo utilizando `for...of`. En JavaScript contamos con otra forma de hacer eso, ¡El map! :star_struck:
+En el ejercicio anterior hicimos un mapeo utilizando `for...of`. En JavaScript contamos con otra forma de hacer eso ¡`map`! :star_struck:
 
 Veamos cómo funcionan, si a partir de una lista de strings quisieramos obtener una lista con los largos de cada uno, podríamos definir:
 
