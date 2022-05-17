@@ -1,3 +1,3 @@
-Bueno, ya es bastante mate, ¿no? :eyes:
+¡Excelente! :raised_hands:
 
-Recordemos que la educación está ante todo. :relieved:
+Lo bueno de conocer más de una manera de hacer lo mismo es que puedas elegir qué herramienta te gusta más para resolver los problemas. :hammer_pick:
