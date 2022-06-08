@@ -65,7 +65,7 @@ it("La temperatura 50°C está en negrita",() => {
 
 it("Los estilos están en el archivo css",() => {
   let etiquetasStyle = document.querySelectorAll("*[style]")
-  assert.eql(etiquetasStyle.length, 0);
+  etiquetasStyle.length.should.eql(0);
 })
 
 
