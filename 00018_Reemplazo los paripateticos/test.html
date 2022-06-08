@@ -1,0 +1,64 @@
+it("Se introdujo una lista desordenada con 11 items", () => {
+  document.querySelectorAll("ul li").length.should.eql(11);
+})
+
+it ("La temperatura 0°C está en color #0000FF",() => {
+  document.querySelectorAll('ul li p')[0].should.have.style('color', 'rgb(0, 0, 255)')
+})
+
+it ("La temperatura 5°C está en color #009AFF",() => {
+  document.querySelectorAll('ul li p')[1].should.have.style('color', 'rgb(0, 154, 255)')
+}) 
+
+it ("La temperatura 10°C está en color #00CDFF",() => {
+  document.querySelectorAll('ul li p')[2].should.have.style('color', 'rgb(0, 205, 255)')
+}) 
+
+it ("La temperatura 15°C está en color #A0E6FE",() => {
+  document.querySelectorAll('ul li p')[3].should.have.style('color', 'rgb(160, 230, 254)')
+}) 
+
+it ("La temperatura 20°C está en color #D0F7FC",() => {
+  document.querySelectorAll('ul li p')[4].should.have.style('color', 'rgb(208, 247, 252)')
+}) 
+
+it ("La temperatura 25°C está en color blanco",() => {
+  document.querySelectorAll('ul li p')[5].should.have.style('color', 'rgb(253, 254, 230)')
+})
+
+it ("La temperatura 30°C está en color #FFFF67",() => {
+  document.querySelectorAll('ul li p')[6].should.have.style('color', 'rgb(255, 255, 103)')
+})
+
+it ("La temperatura 35°C está en color #FFCA00",() => {
+  document.querySelectorAll('ul li p')[7].should.have.style('color', 'rgb(255, 202, 0)')
+})
+
+it ("La temperatura 40°C está en color #FE9935",() => {
+  document.querySelectorAll('ul li p')[8].should.have.style('color', 'rgb(254, 153, 53)')
+})
+
+it ("La temperatura 45°C está en color #FF561A",() => {
+  document.querySelectorAll('ul li p')[9].should.have.style('color', 'rgb(255, 86, 26)')
+})
+
+it ("La temperatura 50°C está en color #FF0000",() => {
+  document.querySelectorAll('ul li p')[10].should.have.style('color', 'rgb(255, 0, 0)')
+})
+
+it("La temperatura 0°C está en negrita",() => {
+  document.querySelectorAll('ul li p')[0].should.have.style('font-weight', 'bold')
+})
+
+it("Las temperaturas intermedias no estan en negrita",() => {
+  document.querySelectorAll('ul li')[1].should.not.have.style('font-weight', 'bold')
+  document.querySelectorAll('ul li')[2].should.not.have.style('font-weight', 'bold')
+  document.querySelectorAll('ul li')[5].should.not.have.style('font-weight', 'bold')
+  document.querySelectorAll('ul li')[9].should.not.have.style('font-weight', 'bold')
+})
+
+it("La temperatura 50°C está en negrita",() => {
+  document.querySelectorAll('ul li p')[10].should.have.style('font-weight', 'bold')
+})
+
+
